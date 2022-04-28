@@ -3,7 +3,7 @@ import { Audio, Sequence, Series, staticFile } from "remotion";
 import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate,  } from 'remotion'; 
 
 //Imports for Sequences
-import {Intro} from 'Intro';
+import {Intro} from './Intro';
 
 
 
