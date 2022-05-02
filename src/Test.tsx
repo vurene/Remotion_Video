@@ -1,10 +1,10 @@
 import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 
- import styled from 'styled-components';
+import styled from 'styled-components';
 
 
 
- 
+
  export const Test: React.FC <{}> = ({}) => {
 return (
 <AbsoluteFill
