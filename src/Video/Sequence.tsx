@@ -4,10 +4,13 @@ import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, int
 
 //Imports for Sequences
 import {Intro} from './Intro/Intro';
-import { RemotionLogo } from "./components/RemotionBlurredLogo";
+import { RemotionLogo } from "./components/RemotionLogo";
 import { Scene1 } from "./Scenes/Scene";
 import { Scene2 } from "./Scenes/Scene2";
 import { Scene3 } from "./Scenes/Scene3";
+import { Scene4 } from "./Scenes/Scene4";
+import { Scene5 } from "./Scenes/Scene5";
+import { Scene6 } from "./Scenes/Scene6";
 
 
 
@@ -17,9 +20,7 @@ export const Main = () => {
   return (
     <>
       <Series>
-        <Series.Sequence durationInFrames={120}>
-          <Intro />
-        </Series.Sequence>
+  
         <Series.Sequence durationInFrames={120}>
           <RemotionLogo/>
         </Series.Sequence>
@@ -31,6 +32,15 @@ export const Main = () => {
         </Series.Sequence>
         <Series.Sequence durationInFrames={330}>
           <Scene3/>
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={310}>
+          <Scene4/>
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={420}>
+          <Scene5/>
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={330}>
+          <Scene6/>
         </Series.Sequence>
       </Series>
     
