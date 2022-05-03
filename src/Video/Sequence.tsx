@@ -36,7 +36,7 @@ export const Main = () => {
         <Series.Sequence durationInFrames={310}>
           <Scene4/>
         </Series.Sequence>
-        <Series.Sequence durationInFrames={420}>
+        <Series.Sequence durationInFrames={510}>
           <Scene5/>
         </Series.Sequence>
         <Series.Sequence durationInFrames={330}>
