@@ -15,7 +15,7 @@ export const RemotionVideo: React.FC = () => {
 			<Composition
 				id="Main"
 				component={Main}
-				durationInFrames={4229}
+				durationInFrames={6599}
 				fps={30}
 				width={1280}
 				height={720}
@@ -27,7 +27,7 @@ export const RemotionVideo: React.FC = () => {
 
 
 			<Composition
-				id="rect"
+				id="Rectangle"
 				component={RectStarIn}
 				durationInFrames={200}
 				fps={30}
@@ -43,21 +43,14 @@ export const RemotionVideo: React.FC = () => {
 				height={720}
 			/>
 		<Composition
-				id="Show"
+				id="Test"
 				component={Showcase}
 				durationInFrames={300}
 				fps={30}
 				width={1280}
 				height={720}
 			/>
-<Composition
-				id="REctstar"
-				component={RectStarSpring}
-				durationInFrames={300}
-				fps={30}
-				width={1280}
-				height={720}
-			/>
+
 		</>
 	);
 };
