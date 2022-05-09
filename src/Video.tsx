@@ -1,10 +1,13 @@
 import {Composition} from 'remotion';
-import {HelloWorld} from './HelloWorld';
-import {Logo} from './HelloWorld/Logo';
+
 
 import { Intro } from './Video/Intro/Intro';
 import { Main } from './Video/Sequence';
-
+import { RectStarIn } from './Video/components/RectStarIn'
+import { Scene8 } from './Video/Scenes/Scene8';
+import { ShowcaseAssets } from './Video/Showcase-Assets/Showcase-Assets';
+import { Showcase } from './Video/Scenes/Showcase';
+import { RectStarSpring } from './Video/components/RectStarSpring';
 
 export const RemotionVideo: React.FC = () => {
 	return (
@@ -12,7 +15,7 @@ export const RemotionVideo: React.FC = () => {
 			<Composition
 				id="Main"
 				component={Main}
-				durationInFrames={3629}
+				durationInFrames={6599}
 				fps={30}
 				width={1280}
 				height={720}
@@ -21,9 +24,11 @@ export const RemotionVideo: React.FC = () => {
 					titleColor: 'black',
 				}}
 			/>
-			{/* <Composition
-				id="Logo"
-				component={Logo}
+
+
+			<Composition
+				id="Rectangle"
+				component={RectStarIn}
 				durationInFrames={200}
 				fps={30}
 				width={1280}
@@ -37,14 +42,14 @@ export const RemotionVideo: React.FC = () => {
 				width={1280}
 				height={720}
 			/>
-			<Composition
-				id="Endcard"
-				component={EndCard}
-				durationInFrames={200}
+		<Composition
+				id="Test"
+				component={Showcase}
+				durationInFrames={300}
 				fps={30}
 				width={1280}
 				height={720}
-			/> */}
+			/>
 
 		</>
 	);

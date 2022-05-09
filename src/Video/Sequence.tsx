@@ -4,13 +4,22 @@ import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, int
 
 //Imports for Sequences
 import {Intro} from './Intro/Intro';
-import { RemotionLogo } from "./components/RemotionLogo";
-import { Scene1 } from "./Scenes/Scene";
+import { RemotionLogo } from "./Intro/RemotionLogo";
+import { Scene1 } from "./Scenes/Scene1";
 import { Scene2 } from "./Scenes/Scene2";
 import { Scene3 } from "./Scenes/Scene3";
 import { Scene4 } from "./Scenes/Scene4";
 import { Scene5 } from "./Scenes/Scene5";
 import { Scene6 } from "./Scenes/Scene6";
+import { Scene7 } from "./Scenes/Scene7";
+import { Scene8 } from "./Scenes/Scene8";
+import { Scene9 } from "./Scenes/Scene9";
+import { Scene10 } from "./Scenes/Scene10";
+import { Scene11 } from "./Scenes/Scene11";
+import { Showcase } from "./Scenes/Showcase";
+import { Scene0 } from "./Scenes/Scene0";
+import { Scene35 } from "./Scenes/Scene35";
+import { Showcase2 } from "./Scenes/Showcase2";
 
 
 
@@ -21,26 +30,100 @@ export const Main = () => {
     <>
       <Series>
   
+{/*               Logo                        */}
+
+<Series.Sequence durationInFrames={150}>
+          <Intro/>
+        </Series.Sequence>
+
+{/*               Logo                        */}
+
         <Series.Sequence durationInFrames={120}>
           <RemotionLogo/>
         </Series.Sequence>
-        <Series.Sequence durationInFrames={150}>
+
+{/*           Assets in Remotion                   */}
+
+        <Series.Sequence durationInFrames={330}>
+          <Showcase/>
+        </Series.Sequence>
+  
+{/*         Introduction          */}
+
+        <Series.Sequence durationInFrames={240}>
+        <Scene0/>
+        </Series.Sequence>
+
+{/*         Introduction          */}
+
+        <Series.Sequence durationInFrames={330}>
         <Scene1/>
         </Series.Sequence>
-        <Series.Sequence durationInFrames={330}>
+
+{/*      Fundamentals - Video Properties           */}
+
+        <Series.Sequence durationInFrames={360}>
           <Scene2/>
         </Series.Sequence>
-        <Series.Sequence durationInFrames={330}>
+
+ {/*      Fundamentals - Compositions              */}
+
+        <Series.Sequence durationInFrames={660}>
           <Scene3/>
         </Series.Sequence>
-        <Series.Sequence durationInFrames={310}>
+
+  {/*      Fundamentals - Compositions              */}
+
+        <Series.Sequence durationInFrames={480}>
+          <Scene35/>
+        </Series.Sequence> 
+
+{/*      Animating Properties - Introduction          */}
+
+        <Series.Sequence durationInFrames={360 }>
           <Scene4/>
         </Series.Sequence>
-        <Series.Sequence durationInFrames={420}>
+
+{/*      Animating Properties - interpolate() explanation            */}
+
+        <Series.Sequence durationInFrames={660}>
           <Scene5/>
         </Series.Sequence>
-        <Series.Sequence durationInFrames={330}>
+
+ {/*     Animating Properties - spring() explanation            */}
+
+        <Series.Sequence durationInFrames={1020}>
           <Scene6/>
+        </Series.Sequence>
+
+ {/*     Interpolate & Spring showcase             */}
+
+        <Series.Sequence durationInFrames={240}> 
+          <Scene7/>
+        </Series.Sequence>
+
+ {/*    Translate() Files Explained + Showcase         */}
+
+        <Series.Sequence durationInFrames={510}>
+          <Scene8/>
+        </Series.Sequence>
+
+{/*     SVG Files Explained + Showcase         */}
+
+        <Series.Sequence durationInFrames={390}>
+          <Scene9/>
+        </Series.Sequence>
+
+{/*    How to SVG explanation     */}       
+
+        <Series.Sequence durationInFrames={510}>
+          <Scene10/>
+        </Series.Sequence>
+
+{/*    SVG Explained + Showcase         */}
+
+        <Series.Sequence durationInFrames={330}>
+          <Scene11/>
         </Series.Sequence>
       </Series>
     
