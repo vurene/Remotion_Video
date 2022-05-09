@@ -20,19 +20,26 @@ import { Showcase } from "./Scenes/Showcase";
 import { Scene0 } from "./Scenes/Scene0";
 import { Scene35 } from "./Scenes/Scene35";
 import { Showcase2 } from "./Scenes/Showcase2";
+import { AudioFile } from "./helpers/AudioFile";
 
 
 
-// const audio = staticFile("/audio.wav");
 
 export const Main = () => {
+
+
   return (
+
+
+
     <>
+<AudioFile/>
+
       <Series>
   
 {/*               Logo                        */}
 
-<Series.Sequence durationInFrames={150}>
+<Series.Sequence durationInFrames={120}>
           <Intro/>
         </Series.Sequence>
 
