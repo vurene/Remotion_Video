@@ -190,7 +190,7 @@ the physical properties of the animation.
 			<Text style={{
 				opacity: Fadein3,
 				transform: `translateY(-460px)translateX(-10px)`}}>
-			The following example will showcase the difference between t he two functions. 
+			The following example will showcase the difference between the two functions. 
 			<br/>
 			<br/> 
 			we will use the CSS function 
@@ -200,7 +200,7 @@ the physical properties of the animation.
 			with the value <TextBlue>
 			 0.4 to 0.1  </TextBlue>
 			<br/> 
-			the difference in result will become obvious
+			the difference in result will become obvious 
 			<br/> 
 		 <br/>
 		 <br/><br/><br/>		

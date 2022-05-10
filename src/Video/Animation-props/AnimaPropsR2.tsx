@@ -26,7 +26,7 @@ const Opac = interpolate(frame, [170,200],[0,1],
 			<Img src={CodePic} 
 			style={{
 				opacity: Opac ,
-				transform:`translateY(230px)translateX(130px)` 
+				transform:`translateY(250px)translateX(130px)` 
 			}}
 			/>
 		</Container>

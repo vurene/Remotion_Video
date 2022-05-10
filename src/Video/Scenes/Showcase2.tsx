@@ -1,54 +1,42 @@
 import {AbsoluteFill, Img, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import styled from 'styled-components';
-
-import { Fundamentals2 } from '../Fundamentals/Fundamentals2';
-
-import { FundamentalsR2 } from '../Fundamentals/FundamentalsR2';
-import { ShowcaseAssets } from '../Showcase-Assets/Showcase-Assets';
-
 import Lgo from '../../assets/Logos.png';
 import { CENTERED } from '../Styled-Components/Centered';
+import { OUTER } from '../Styled-Components/Outer';
+import { CONTAINER } from '../Styled-Components/Container';
+import { LEFT } from '../Styled-Components/Left';
+import { RIGHT } from '../Styled-Components/Right';
+import { PANEL } from '../Styled-Components/Panel';
 
-const Outer = styled(AbsoluteFill)`
-	background-color: #181820;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+//__________Styled-Components____________
+
+
+const Outer = styled(OUTER)`
+
 `;
 
-const Container = styled.div`
-	background-color:#181820;
-	display: flex;
-	flex: 1;
-	flex-direction: row;
-	padding: 40px;
+const Container = styled(CONTAINER)`
+
 `;
 
-const Left = styled.div`
-	flex: 1;
-	display: flex;
+const Left = styled(LEFT)`
+
 `;
 
-const Right = styled.div`
-	flex: 1;
-	display: flex;
-	flex-direction: column;
+const Right = styled(RIGHT)`
+
 `;
 
-const RADIUS = 30;
+const Panel = styled(PANEL)`
 
-const Panel = styled.div`
-	position: absolute;
-	background-color: 
-	#282c38;
-	border-radius: ${RADIUS}px;
-	display: flex;
-	justify-content: center; 
-	align-items: center;
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.07);
 `;
 
 const Centered = styled(CENTERED)`
 
 `;
+
+
 
 export const Showcase2: React.FC = () => {
 	

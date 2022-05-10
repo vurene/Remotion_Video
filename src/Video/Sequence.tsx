@@ -119,7 +119,7 @@ export const Main = () => {
 
 {/*     SVG Files Explained + Showcase         */}
 
-        <Series.Sequence durationInFrames={390}>
+        <Series.Sequence durationInFrames={450}>
           <Scene9/>
         </Series.Sequence>
 
@@ -131,7 +131,7 @@ export const Main = () => {
 
 {/*   Audio Explained         */}
 
-        <Series.Sequence durationInFrames={330}>
+        <Series.Sequence durationInFrames={390}>
           <Scene11/>
         </Series.Sequence>
   

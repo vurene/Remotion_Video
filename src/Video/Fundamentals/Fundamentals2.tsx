@@ -18,7 +18,7 @@ const Container = styled(ABSO_FILL)`
 `;
 
 const Title = styled(TITLE_B)`
-
+transform: translateY(-50px);
 `;
 
 const Text = styled(TEXT)`
@@ -27,7 +27,7 @@ const Text = styled(TEXT)`
 	`;
 
 const Text2 = styled(TEXT2)`
-	margin-left: 15px;
+	margin: 25px;
 	margin-top:20px ;
 
 	`;
@@ -82,7 +82,7 @@ const frame = useCurrentFrame();
 			
 			
 		<TextBlau>	fps</TextBlau> 
-		The value of frames per second.
+		Value of frames per second
 			<br/> 
 			<br/>
 			</Text2>

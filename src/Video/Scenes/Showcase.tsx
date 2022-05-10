@@ -1,10 +1,6 @@
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import styled from 'styled-components';
-
-import { Fundamentals2 } from '../Fundamentals/Fundamentals2';
-
-import { FundamentalsR2 } from '../Fundamentals/FundamentalsR2';
-import { ShowcaseAssets } from '../Showcase-Assets/Showcase-Assets';
+import { ShowcaseAssets } from '../Intro/Showcase-Assets';
 import { CENTERED } from '../Styled-Components/Centered';
 import { CONTAINER } from '../Styled-Components/Container';
 import { LEFT } from '../Styled-Components/Left';
@@ -12,7 +8,9 @@ import { OUTER } from '../Styled-Components/Outer';
 import { PANEL } from '../Styled-Components/Panel';
 import { RIGHT } from '../Styled-Components/Right';
 
+
 //__________Styled-Components____________
+
 
 const Outer = styled(OUTER)`
 

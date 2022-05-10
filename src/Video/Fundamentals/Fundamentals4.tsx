@@ -34,13 +34,10 @@ const TextBlue = styled(TEXT_B)`
 export const Fundamentals4: React.FC = () => {
 	return (
 		<Container>
-			<div style={{height: 50, width: 150, transform: `rotate(3600deg)`}}>
-				{/* <Triangle opacity={1} scale={1} size={150} /> */}
-			</div>
 			<br />
 			<br />
-			<Title style = {{transform:`translate(0px,70px)`}}> Fundamentals </Title>
-			<Text  style = {{transform:`translate(0px,40px)`}}>
+			<Title style = {{transform:`translate(0px,50px)`}}> Fundamentals </Title>
+			<Text  style = {{transform:`translate(0px,30px)`}}>
 				You can visualise these compositions in the browser  
 				<br/>
 				using
@@ -54,7 +51,7 @@ export const Fundamentals4: React.FC = () => {
 				<br/>
 				<br/>
 				these are like their own mini Videos 
-				that allow you to isolate and inspect each scene you choose.
+				that allow you to isolate and inspect each scene.
 			<br/>
 			<br/>
 			<br/> 

@@ -10,15 +10,14 @@ import { TEXT_B } from '../Styled-Components/TextBlue';
 
 //___________Styled Components______________
 
+
+
 // Absolute-Fill 
 const Container = styled(ABSO_FILL)`
 
 `;
 
 
-const Title = styled(TITLE_B)`
-
-`;
 
 const Text = styled(TEXT)`
 margin:40px;
@@ -26,7 +25,7 @@ margin:40px;
 
 const Text2 = styled(TEXT2)`
 margin-right: 35px;
-transform: translateY(30px);
+transform: translate(50px,30px);
 margin-left: 20px;
 `;
 
@@ -34,11 +33,7 @@ const Link = styled(LINK)`
 font-size: 40px;
 `;
 
-const TextBlue = styled(TEXT_B)`
 
-
-
-`
 //______________Exports______________________
 
 
@@ -57,11 +52,13 @@ export const Outro: React.FC = () => {
 
 <Text style={{transform: `translateY(20px)`}}>
 
-For a more in-depth explanation visit 
+For a more in-depth explanation 
+<br/>
+<Text2>about Remotion visit </Text2>
 
 <br/>
 <br/>
-<Link style={{transform:`translate(20px,0px)`}}>
+<Link style={{transform:`translate(0px,0px)`}}>
       <a
 				href="https://https://remotion.dev"
 				target="_blank"

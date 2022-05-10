@@ -19,6 +19,7 @@ const Title = styled(TITLE_B)`
 `;
 
 const Text = styled(TEXT)`
+
 transform:translateY(-20px);
 margin-left: 80px;
 `;
@@ -47,7 +48,7 @@ export const Fundamentals1: React.FC = () => {
 	
 		<TextBlue>	RemotionVideo </TextBlue>
 			<br/>
-			<br/>
+		
 			Think of it as your entire Video!
 		
 		</Text>

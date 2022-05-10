@@ -28,7 +28,7 @@ export const FundamentalsR: React.FC = () => {
 				target="_blank"
 				style={{
 					textDecoration: 'none',
-					transform: `translateY(25px)translateX(-30px))`
+					transform: `translateY(25px)translateX(-30px)`
 				}}
 			>
 				<Link>remotion.dev</Link>
