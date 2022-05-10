@@ -2,6 +2,10 @@
 import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 
 
+
+
+
+
 export const Arc: React.FC<{
   
   rotation: number;

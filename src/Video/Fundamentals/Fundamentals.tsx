@@ -38,7 +38,7 @@ export const Fundamentals: React.FC = () => {
 			<Text2  style={{transform: `translateX(-10px)translateY(10px)`}}> to render anything you want   </Text2>
 			<br/>
 			
-		<Text2  style={{transform: `translateX(150px)translateY(10px)`}}>	using:</Text2>
+		<Text2  style={{transform: `translateX(130px)translateY(10px)`}}>	using:</Text2>
 			<br/>
 			
 			<Link 	style={{ transform:`translateX(-20px)translateY(80px)`}}  >

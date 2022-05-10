@@ -101,7 +101,7 @@ export const AnimaProps2: React.FC = () => {
 			opacity values<TextBlue> (0, 0.05, 0.1, 0.15 ...)</TextBlue><br/> 
 			and use the extrapolateRight setting to clamp the output<br/> 
 			so that it <TextBlue>never becomes bigger than 1</TextBlue> 
-
+			This stops the animation at the given value
 				</Text>
 
 
