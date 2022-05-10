@@ -10,6 +10,7 @@ import { RIGHT } from '../Styled-Components/Right';
 import { VectorFiles2 } from '../Vector-Files/VectorFiles2';
 import { VectorFilesR2 } from '../Vector-Files/VectorFilesR2';
 
+
 //__________Styled-Components____________
 
 

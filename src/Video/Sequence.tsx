@@ -3,8 +3,8 @@ import { Audio, Sequence, Series, staticFile } from "remotion";
 import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate,  } from 'remotion'; 
 
 //Imports for Sequences
-import {Intro} from './Intro/Intro';
-import { RemotionLogo } from "./Intro/RemotionLogo";
+import {Intro} from './Scenes/Intro';
+import { RemotionLogoIntro } from "./Scenes/RemotionLogoIntro";
 import { Scene1 } from "./Scenes/Scene1";
 import { Scene2 } from "./Scenes/Scene2";
 import { Scene3 } from "./Scenes/Scene3";
@@ -21,6 +21,8 @@ import { Scene0 } from "./Scenes/Scene0";
 import { Scene35 } from "./Scenes/Scene35";
 import { Showcase2 } from "./Scenes/Showcase2";
 import { AudioFile } from "./helpers/AudioFile";
+import { SceneOutro } from "./Scenes/SceneOutro";
+import { RemotionLogoOutro } from "./Scenes/RemotionLogoOutro";
 
 
 
@@ -46,7 +48,7 @@ export const Main = () => {
 {/*               Logo                        */}
 
         <Series.Sequence durationInFrames={120}>
-          <RemotionLogo/>
+          <RemotionLogoIntro/>
         </Series.Sequence>
 
 {/*           Assets in Remotion                   */}
@@ -127,13 +129,27 @@ export const Main = () => {
           <Scene10/>
         </Series.Sequence>
 
-{/*    SVG Explained + Showcase         */}
+{/*   Audio Explained         */}
 
         <Series.Sequence durationInFrames={330}>
           <Scene11/>
         </Series.Sequence>
-      </Series>
+  
     
+{/*      Outro    / Credits        */}
+
+<Series.Sequence durationInFrames={330}>
+          <SceneOutro/>
+        </Series.Sequence>
+
+{/*      Remotion Logo Outro       */}
+
+        <Series.Sequence durationInFrames={180}>
+          <RemotionLogoOutro/>
+        </Series.Sequence>
+
+      </Series>
+
     </>
   );
 };
