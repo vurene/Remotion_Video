@@ -2,8 +2,8 @@ import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, int
 import styled from 'styled-components';
 import { FakeDevTools } from '../FakeDevTools';
 import { BG_COLOR } from '../helpers/color';
-import { Arc } from './Arc';
-import {FC} from 'React';
+import { Arc } from '../Intro/Arc';
+
 
 
 

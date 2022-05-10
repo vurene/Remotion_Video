@@ -2,7 +2,7 @@ import React from "react";
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from "styled-components";
 // Picture Import
-import  Logo  from "../../assets/logo.png";
+import  Logo  from "../../assets/logotitle.png";
 
 
 
@@ -29,7 +29,7 @@ transform:scale(0.2);
 
 
 
-export const RemotionLogo: React.FC = () => {
+export const RemotionLogoOutro: React.FC = () => {
 
   const { fps } = useVideoConfig();
   const frame = useCurrentFrame();
@@ -42,6 +42,8 @@ extrapolateRight:'clamp'
   const enterLogo = spring({ 
     fps,
     frame: frame,
+    from: 0,
+    to: 2,
     config: {
       damping: 200,
     },
@@ -69,14 +71,7 @@ extrapolateRight:'clamp'
       />
 
 </Container>
-<Text   style={{
-          height: 1500,
-         
-          opacity: Opac
-        }}>
-  
- Welcome to Remotion 
-  </Text>
+
 
     </AbsoluteFill>
   );

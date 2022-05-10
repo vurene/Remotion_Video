@@ -75,7 +75,7 @@ export const Translate: React.FC = () => {
 						The x-coordinate(horizontal) is always first and the second is the <br/>y-coordinate
 					<TextBlue style={{transform:`translate(170px,-35px)`}}>translate(2px,2px)</TextBlue>
 				
-			
+						
 						
 				</Text2>
 	</Text> 

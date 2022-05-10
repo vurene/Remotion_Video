@@ -1,8 +1,8 @@
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
 import { transform } from 'typescript';
-
-import Pic from'../../assets/spring().png'
+import Pic1	from'../../assets/scale-Spring.png'
+import Pic2 from'../../assets/spring().png'
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { LINK } from '../Styled-Components/Link';
 import { TEXT } from '../Styled-Components/Text';
@@ -21,8 +21,9 @@ import { Translate } from '../Translate()/Translate';
 
 //___________Container is the primary component, 
 const Container = styled(ABSO_FILL)`
+transform: translate(0px,-100px);
+`   
 
-`;
 
 //___________Title_________________
 
@@ -31,7 +32,7 @@ const Title = styled(TITLE_B)`
 `;
 
 const Text = styled(TEXT)`
-transform: translateY(50px);
+
 		`;
 
 const TextTwo = styled(Text)`
@@ -100,9 +101,7 @@ const Spring1 = spring({
 
 		
 		<Container>
-			{/* <div style={{height: 50, width: 150, transform: `rotate(3600deg)`}}>
-	
-			</div> */}
+		
 			<br />
 		
 			<Title style={{
@@ -119,7 +118,7 @@ const Spring1 = spring({
 			style={{ 
 							opacity:Fadeout,
 							transform: `translateY(60px)` 	}}>
-			<TextBlue>	spring( ) function</TextBlue>  are similar to 
+			<TextBlue>	spring( ) functions</TextBlue>  are similar to 
 			<TextBlue> interpolate( ) functions</TextBlue>
 			<br /> except they seem to make motion more natural.
 			<br />The default spring configuration leads to a little bit of overshoot, 
@@ -163,7 +162,7 @@ const Spring1 = spring({
 <Text style= {{opacity:  Fadeout2,
 transform: `translateY(-120px)translateX(-180px)`}}>
 				<Text2 style= {{opacity: Fadein2,}}>
-				<Img src={Pic} style={{
+				<Img src={Pic2} style={{
 		 transform:`translate(680px,250px)	scale(1.2)`,
 											}}/>
 
@@ -187,10 +186,11 @@ the physical properties of the animation.
 
 
 {/*______________ Third Text Layer _____________*/}
+
 			<Text style={{
 				opacity: Fadein3,
 				transform: `translateY(-460px)translateX(-10px)`}}>
-			The following example will showcase the difference between the two functions. 
+			The following example will showcase the difference between t he two functions. 
 			<br/>
 			<br/> 
 			we will use the CSS function 
@@ -206,9 +206,9 @@ the physical properties of the animation.
 		 <br/><br/><br/>		
 				</Text>
 
-
-				<Img src={Pic} style={{
-					transform:`translate(340px,-800px)	scale(1.2)`,
+				{/* <Img src={Pic1} style={{ 	opacity:FadeInPic		}}/> */}
+				<Img src={Pic1} style={{ 
+					transform:`translate(140px,-800px)	scale(1.2)`,
 					opacity:FadeInPic							}}/>
 				
 		</Container>

@@ -86,8 +86,7 @@ export const AnimaProps: React.FC = () => {
 
 
 			<Img src={CodePic} style={{											
-																transform:`translate(180px, -30px)`,
-																opacity: Opac}}/>
+																transform:`translate(180px, -30px)`}}/>
 
 		</Container>
 	);

@@ -1,5 +1,4 @@
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
-import { AbsoluteFill } from 'remotion';
 import styled from 'styled-components';
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { LINK } from '../Styled-Components/Link';

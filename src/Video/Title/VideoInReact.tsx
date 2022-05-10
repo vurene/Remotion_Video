@@ -2,7 +2,7 @@
 import { AbsoluteFill, Sequence, useCurrentFrame } from "remotion";
 
 // import { Code } from "./components/Code";
-import { RemotionLogo } from "../Intro/RemotionLogo";
+import { RemotionLogoIntro } from "../Scenes/RemotionLogoIntro";
 import { BG_COLOR } from "../helpers/color";
 
 export const VideoInReact = () => {
@@ -16,7 +16,7 @@ export const VideoInReact = () => {
     <AbsoluteFill>
 
       <Sequence from={90}>
-        <RemotionLogo />
+        <RemotionLogoIntro />
       </Sequence>
     </AbsoluteFill>
   );

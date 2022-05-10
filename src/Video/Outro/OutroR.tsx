@@ -43,38 +43,34 @@ const TextBlue = styled(TEXT_B)`
 
 
 
-export const Outro: React.FC = () => {
-
-	const config = useVideoConfig();
-	const frame = useCurrentFrame();
-
-
+export const OutroR: React.FC = () => {
 
 	return (
 
 
 		<Container>
 
-<Text style={{transform: `translateY(20px)`}}>
 
-For a more in-depth explanation visit 
+   
+				<br />
 
-<br/>
-<br/>
-<Link style={{transform:`translate(20px,0px)`}}>
-      <a
-				href="https://https://remotion.dev"
-				target="_blank"
-				style={{
-					textDecoration: 'none',
-					
-				}}
-			>
-    Remotion.dev
-      </a>
-      </Link>
+	
+        <Title style={{transform: `translate(-10px,-30px)`}}>
+                        Credits</Title>
+			<Text style={{transform: `translate(0px,-60px)`}}>
+				<br/>
+			<Text2 >Video by Rene Vukorepa
+				<br/>
+			<br />
 
-</Text>
+			<br/>
+      Music by
+
+    Felix Heinrich 
+   
+        
+</Text2>
+			</Text>
 
 
 		</Container>
