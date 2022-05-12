@@ -34,10 +34,6 @@ const Text2 = styled(TEXT2)`
 	`;
 
 
-const Link = styled(LINK)`
-
-`;
-
 const TextBlue=styled(TEXT_B)`
 
 

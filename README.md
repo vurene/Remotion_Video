@@ -8,6 +8,11 @@
 
 Welcome to your Remotion project!
 
+
+## File Structure 
+
+
+
 ## Commands
 
 **Install Dependencies**

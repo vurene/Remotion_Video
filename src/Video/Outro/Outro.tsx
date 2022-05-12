@@ -17,8 +17,6 @@ const Container = styled(ABSO_FILL)`
 
 `;
 
-
-
 const Text = styled(TEXT)`
 margin:40px;
 `;
@@ -40,15 +38,10 @@ font-size: 40px;
 
 export const Outro: React.FC = () => {
 
-	const config = useVideoConfig();
-	const frame = useCurrentFrame();
+return (
 
 
-
-	return (
-
-
-		<Container>
+<Container>
 
 <Text style={{transform: `translateY(20px)`}}>
 
@@ -58,13 +51,14 @@ For a more in-depth explanation
 
 <br/>
 <br/>
+
+
 <Link style={{transform:`translate(0px,0px)`}}>
       <a
 				href="https://https://remotion.dev"
 				target="_blank"
 				style={{
 					textDecoration: 'none',
-					
 				}}
 			>
     Remotion.dev

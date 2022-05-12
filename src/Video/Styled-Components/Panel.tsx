@@ -15,5 +15,5 @@ export const PANEL = styled.div`
 	display: flex;
 	justify-content: center; 
 	align-items: center;
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.07);
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 `;

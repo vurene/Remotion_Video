@@ -10,7 +10,7 @@ const Container = styled.div<{
 	height: ${(props) => props.height}px;
 `;
 
-export const GlowStroke: React.FC<{
+export const RandAnimation: React.FC<{
 	width: number;
 	height: number;
 	radius: number;

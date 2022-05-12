@@ -15,6 +15,7 @@ import { RIGHT } from '../Styled-Components/Right';
 
 //__________Styled-Components____________
 
+
 const Outer = styled(OUTER)`
 
 `;
@@ -44,17 +45,20 @@ const Centered = styled(CENTERED)`
 export const Scene35: React.FC = () => {
 
 
-	const {fps, width, height} = useVideoConfig();
+	const {fps, width, height} = useVideoConfig();				// import default props from VideoConfig
+	const frame = useCurrentFrame();											// import frame from useCurrentFrame()
+	const PADDING = 80;																		// set base value for Panels padding
+	const SPACING = 50;																		// set base value for Panels spacing
+	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 2;	// set Width from Panel 1
+	const PANEL_WIDTH2 = (width - PADDING * 1 - SPACING) / 2;	// set Width from Panel 2	
+	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 0.8;	// set Height from Panel 1
+	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1.5;	// set Height from Panel 2
+	
 
-	const PADDING = 80;
-	const SPACING = 50;
-	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 2;
-	const PANEL_WIDTH2 = (width - PADDING * 1 - SPACING) / 2;
-	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 0.8;
-	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1.5;
 
-	const frame = useCurrentFrame();
 
+
+// Spring function for timing the CSS functions
 	const progress = (i: number) =>
 		spring({
 			fps,
@@ -64,19 +68,9 @@ export const Scene35: React.FC = () => {
 				mass: 2,
 			},
 		});
-		const Dingda = (i: number) =>
-		spring({
-			fps,
-			frame: frame - i * 10 - 15,
-			from:0,
-			to: 160,
-			config: {
-				damping: 100,
-				mass: 2,
-			},
-		});
 
-		console.log(Dingda(6))
+
+	
 	return (
 		<Outer>
 			<Container>

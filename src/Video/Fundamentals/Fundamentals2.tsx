@@ -11,7 +11,6 @@ import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 
 //_________Styled Components_______
 
-
 const Container = styled(ABSO_FILL)`
 
 	
@@ -24,17 +23,17 @@ transform: translateY(-50px);
 const Text = styled(TEXT)`
 	transform: translateY(30px);
 
-	`;
+`;
 
 const Text2 = styled(TEXT2)`
 	margin: 25px;
 	margin-top:20px ;
 
-	`;
+`;
 
 const TextBlau = styled(TEXT_B)`
 
-	`;
+`;
 
 const TextWhite = styled.div`
 font-weight: 7800;
@@ -43,16 +42,15 @@ font-size: 30px;
 margin-bottom: 5px;
 color: white;
 padding: 0px 5px 0px 5px ;
-	`;
+`;
 
 
 export const Fundamentals2: React.FC = () => {
 
-const config = useVideoConfig();
-const frame = useCurrentFrame();
+const frame = useCurrentFrame(); // import frame from useCurrentFrame() hook to be used in the following interpolate function
 
-
-	const Opac = interpolate(frame, [190,210],[1,0],
+// interpolate function for animating Opacity of Picture	
+const Opac = interpolate(frame, [190,210],[1,0],
 		 {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})
 
 

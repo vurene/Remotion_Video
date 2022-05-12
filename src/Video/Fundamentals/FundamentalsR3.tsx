@@ -10,6 +10,7 @@ import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 
 
 
+//_______Styled-Components____________
 
 const Container = styled(ABSO_FILL)`
 `;
@@ -27,16 +28,17 @@ const TextBlue = styled(TEXT_B)`
 	
 	`;
 
+
 export const FundamentalsR3: React.FC = () => {
 
 
 
 	return (
-		<Container>
+	<Container>
 
 
 
-<Text  style = {{transform:`translateY(-20px)`}}>
+		<Text  style = {{transform:`translateY(-20px)`}}>
 				<br/>
 				<br/>
 				<TextBlue>Compositions </TextBlue>
@@ -52,11 +54,11 @@ export const FundamentalsR3: React.FC = () => {
 			which references a react component that contains the actual UI you want to show
 				<br/>
 				<br/> 
-and of course the resolution in 
-<TextBlue>width & height</TextBlue>
-		</Text2>
+			and of course the resolution in 
+			<TextBlue>width & height</TextBlue>
+			</Text2>
 				<br/>
-			 </Text>
-		</Container>
+	 </Text>
+	</Container>
 	);
 };

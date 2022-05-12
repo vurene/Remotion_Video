@@ -9,40 +9,45 @@ import { TEXT_B } from '../Styled-Components/TextBlue';
 
 
 
-
+//_______Styled-Components____________
 
 const Container = styled(ABSO_FILL)`
 
 `;
 
-
 const Text = styled(TEXT)`
 
-	margin: 40px;
-	margin-left: 80px;
-	transform: translateY(-10px);
-		`;
+margin: 40px;
+margin-left: 80px;
+transform: translateY(-10px);
+`;
 
 const Text2 = styled(TEXT2)`
 
 margin-bottom: 5px;
 
-	`
+`;
 
 const TextBlue = styled(TEXT_B)`
 	
-	`;
+`;
 
 
 export const ShowcaseAssets: React.FC = () => {
-const config = useVideoConfig();
+
 const frame = useCurrentFrame();
-
-
-	const Fadeout = interpolate(frame, [150, 170],[ 1,0 ],
+const Fadeout = interpolate(frame, [150, 170],[ 1,0 ],
 		{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})
 		const FadeIn = interpolate(frame, [170, 230],[ 0,1 ],
 			{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})	
+
+
+
+
+
+
+
+
 
 	return (
 		<Container>

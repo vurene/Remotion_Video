@@ -1,8 +1,20 @@
 import type { ReactNode } from "react";
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+
+
+
+
+
+
+
 const width = 1920;
 const height = 1080 ;
 const ratio= 1.5; 
+
+
+
+
+
 export const CANVAS = {
   width,
   height,

@@ -43,7 +43,7 @@ const Centered = styled(CENTERED)`
 export const Scene0: React.FC = () => {
 
 	const {fps, width, height} = useVideoConfig(); // import default props from VideoConfig
-
+	const frame = useCurrentFrame(); 								//import frame from useCurrentFrame()
 	const PADDING = 80;														// set base value for Panels padding						
 	const SPACING = 50;														// set base value for Panels spacing
 	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 2;	// set Width from Panel 1	
@@ -52,11 +52,10 @@ export const Scene0: React.FC = () => {
 	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1.5; // set Width from Panel 2
 
 
-	const frame = useCurrentFrame(); //import frame from useCurrentFrame()
+
 
 
 // Spring function for timing the CSS functions
-
 	const progress = (i: number) =>						
 		spring({
 			fps,

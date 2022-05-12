@@ -48,9 +48,10 @@ transform: translate(-30px,10px);
 
 export const AnimaProps: React.FC = () => {
 
-	const config = useVideoConfig();
-	const frame = useCurrentFrame();
+;
+	const frame = useCurrentFrame(); 			// import frame from useCurrentFrame() hook to be used in the following interpolate function				
 
+// interpolate function for animating Opacity of text
 	const Opac = interpolate(frame, [250, 280],[0,1],
 		{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})
 

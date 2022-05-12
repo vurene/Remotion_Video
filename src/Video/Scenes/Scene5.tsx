@@ -37,15 +37,14 @@ const Centered = styled(CENTERED)`
 `;
 
 export const Scene5: React.FC = () => {
-	const {fps, width, height} = useVideoConfig();
+	const {fps, width, height} = useVideoConfig();	// import default props from VideoConfig
+	const frame = useCurrentFrame();								// import frame from useCurrentFrame()
+	const PADDING = 80;															// set base value for Panels padding
+	const SPACING = 50;															// set base value for Panels spacing
+	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 0.96;				// set Width from Panel 1	
+	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 0.8;	// set Height from Panel 1
 
-	const PADDING = 80;
-	const SPACING = 50;
-	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 0.96;
-	const PANEL_WIDTH2 = (width - PADDING * 1 - SPACING) / 2;
-	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 0.8;
-	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1.5;
-	const frame = useCurrentFrame();
+// Spring function for timing the CSS functions
 	const progress = (i: number) =>
 		spring({
 			fps,
@@ -56,7 +55,7 @@ export const Scene5: React.FC = () => {
 			},
 		});
 
-
+// Interpolate function for Opacity of first Panel
 const Opac = interpolate(frame, [10,70],[0,1],
 	{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})
 
@@ -92,7 +91,7 @@ const Opac = interpolate(frame, [10,70],[0,1],
 
 							<AnimaPropsR2 />
 						</Centered>
-					{/* </Panel> */}
+		
 				
 				</Right>
 			</Container> 

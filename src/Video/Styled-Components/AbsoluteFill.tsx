@@ -10,6 +10,4 @@ export const ABSO_FILL = styled(AbsoluteFill)`
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 100px;
-
 `;

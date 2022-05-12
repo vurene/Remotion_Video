@@ -3,12 +3,10 @@ import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { TEXT } from '../Styled-Components/Text';
 import { TEXT_B } from '../Styled-Components/TextBlue';
 import { TITLE_B } from '../Styled-Components/TitleBlue';
-// import {Triangle} from './Logo/Triangle';
 
 
 
-
-
+//_______Styled-Components____________
 
 const Container = styled(ABSO_FILL)`
 
@@ -24,10 +22,9 @@ transform:translateY(-20px);
 margin-left: 80px;
 `;
 
-
 const TextBlue = styled(TEXT_B)`
 
-		`;
+`;
 
 
 export const Fundamentals1: React.FC = () => {

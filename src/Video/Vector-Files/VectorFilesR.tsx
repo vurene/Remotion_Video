@@ -10,7 +10,6 @@ import { TITLE_W } from '../Styled-Components/TitleWhite';
 
 //__________Styled-Components____________
 
-
 const Container = styled(ABSO_FILL)`
 	
 `;
@@ -21,10 +20,6 @@ const Title = styled(TITLE_W)`
 
 const Text= styled(TEXT)`
 margin: 40px;
-`;
-
-const TextBlue = styled(TEXT_B)`
-
 `;
 
 

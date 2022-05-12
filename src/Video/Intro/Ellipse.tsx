@@ -6,7 +6,7 @@ import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, int
 
 
 
-export const Arc: React.FC<{
+export const Ellipse: React.FC<{
   
   rotation: number;
   frame: number;

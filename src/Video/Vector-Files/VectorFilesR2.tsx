@@ -8,7 +8,6 @@ import Pic2 from'../../assets/geometry.png';
 
 //__________Styled-Components____________
 
-
 const Container = styled(ABSO_FILL)`
 
 `;

@@ -7,9 +7,14 @@ import { RectStarIn } from './Video/components/RectStarIn'
 import { Showcase } from './Video/Scenes/Showcase';
 
 
+
+
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
+
+
+{/*  			   */}
 			<Composition
 				id="Main"
 				component={Main}
@@ -25,7 +30,7 @@ export const RemotionVideo: React.FC = () => {
 			{/* <Composition
 				id="Main"
 				component={Main}
-				durationInFrames={7199}
+				durationInFrames={7199} 
 				fps={30}
 				width={1920}
 				height={1080}

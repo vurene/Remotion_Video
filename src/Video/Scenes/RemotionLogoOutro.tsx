@@ -6,6 +6,7 @@ import  Logo  from "../../assets/logotitle.png";
 
 
 
+//_______Styled-Components____________
 
 
 const Text = styled.span`
@@ -23,7 +24,6 @@ font-family: Arial, Helvetica, sans-serif;
 
 const Container = styled.div`
 transform:scale(0.2); 
-
   
 `;
 
@@ -34,11 +34,7 @@ export const RemotionLogoOutro: React.FC = () => {
   const { fps } = useVideoConfig();
   const frame = useCurrentFrame();
 
-const Opac = interpolate(frame, [10,140],[0,1],
-{
-extrapolateLeft: 'clamp',  
-extrapolateRight:'clamp'
-});
+
   const enterLogo = spring({ 
     fps,
     frame: frame,
