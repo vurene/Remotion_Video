@@ -1,8 +1,9 @@
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { TEXT } from '../Styled-Components/Text';
-import { TEXT_B } from '../Styled-Components/TextBlue';
+
 import { TITLE_W } from '../Styled-Components/TitleWhite';
 
 
@@ -12,14 +13,6 @@ import { TITLE_W } from '../Styled-Components/TitleWhite';
 
 const Container = styled(ABSO_FILL)`
 	
-`;
-
-const Title = styled(TITLE_W)`
-
-`;
-
-const Text= styled(TEXT)`
-margin: 40px;
 `;
 
 

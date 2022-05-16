@@ -1,6 +1,6 @@
-
 //____________Imports____________
-import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
 import { PANEL } from '../Styled-Components/Panel';
 import { LEFT } from '../Styled-Components/Left';
@@ -49,10 +49,6 @@ export const SceneOutro: React.FC = () => {
 	const PANEL_WIDTH2 = (width - PADDING * 1 - SPACING) / 2; // set Width from Panel 2
 	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 1.5; // set Height from Panel 1
 	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1;	// set Height from Panel 1
-
-
-
-
 
 // Spring function for timing the CSS functions
 

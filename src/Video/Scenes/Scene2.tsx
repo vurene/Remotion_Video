@@ -2,7 +2,6 @@
 
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import styled from 'styled-components';
-
 import { Fundamentals2 } from '../Fundamentals/Fundamentals2';
 import { FundamentalsR2 } from '../Fundamentals/FundamentalsR2';
 import { CENTERED } from '../Styled-Components/Centered';

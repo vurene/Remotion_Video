@@ -1,6 +1,6 @@
-import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing,
+useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
-import { FundamentalsR } from '../Fundamentals/FundamentalsR';
 import { CENTERED } from '../Styled-Components/Centered';
 import { CONTAINER } from '../Styled-Components/Container';
 import { LEFT } from '../Styled-Components/Left';
@@ -59,7 +59,6 @@ export const Scene11: React.FC = () => {
 				mass: 2,
 			},
 		});
-
 
 
 	return (

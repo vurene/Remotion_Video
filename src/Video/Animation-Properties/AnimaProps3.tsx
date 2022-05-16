@@ -1,4 +1,5 @@
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
 import { transform } from 'typescript';
 import Pic1	from'../../assets/scaleSpring.png'
@@ -14,9 +15,6 @@ import { Translate } from '../Translate()/Translate';
 
 
 //___________Styled Components______________
-
-
-
 
 const Container = styled(ABSO_FILL)`
 transform: translate(0px,-100px);
@@ -35,18 +33,16 @@ margin-left: 20px;
 `;
 
 const Spring = styled(TEXT2)`
-
 `;
 
 const TextBlue = styled(TEXT_B)`
-
 `;
 
 //Added Link styled-component 
  const Link =styled(LINK)`
  margin-left: 0px;
  font-size: 30px;
-`    
+`;    
 
 // Added Text3 for inserting and formating more Text into a Layer
 const Text3 = styled(TEXT)`

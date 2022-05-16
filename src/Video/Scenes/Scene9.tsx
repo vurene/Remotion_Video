@@ -1,7 +1,6 @@
-import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
-
-
 import { VectorFilesR } from '../Vector-Files/VectorFilesR';
 import { VectorFiles } from '../Vector-Files/VectorFiles';
 import { CENTERED } from '../Styled-Components/Centered';

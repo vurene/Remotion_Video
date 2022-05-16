@@ -1,7 +1,6 @@
 
 import { Audio, Sequence, Series, staticFile } from "remotion";
 import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate,  } from 'remotion'; 
-
 //Imports for Sequences
 import {Intro} from './Scenes/Intro';
 import { RemotionLogoIntro } from "./Scenes/RemotionLogoIntro";
@@ -24,8 +23,7 @@ import { SceneOutro } from "./Scenes/SceneOutro";
 import { RemotionLogoOutro } from "./Scenes/RemotionLogoOutro";
 
 
-
-
+// Export______________________________________________
 export const Main = () => {
 
 
@@ -39,6 +37,7 @@ export const Main = () => {
     <AudioFile/>
 
 
+{/*            Start of Series Component                 */}
       <Series>
   
 {/*                Intro                      */}

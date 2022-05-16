@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { LINK } from '../Styled-Components/Link';
 import { TEXT } from '../Styled-Components/Text';
-import { TITLE_W } from '../Styled-Components/TitleWhite';
+
 
 
 //_______Styled-Components____________
@@ -18,8 +18,6 @@ const Text = styled(TEXT)`
 const Link = styled(LINK)`
 	font-size: 50px;
 `;
-
-
 
 
 

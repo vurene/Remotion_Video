@@ -15,7 +15,6 @@ import { TITLE_B } from '../Styled-Components/TitleBlue';
 
 //__________Styled-Components____________
 
-
 const Container = styled(ABSO_FILL)`
 
 `;
@@ -29,12 +28,10 @@ const Text = styled(TEXT)`
 	`;
 
 const Text2 = styled(TEXT2)`
-
 margin: 40px;
-	`;
+`;
 
 const TextBlue =styled(TEXT_B)`
-
 
 `;
 

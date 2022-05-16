@@ -1,9 +1,7 @@
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
-
-
 import { AnimaProps3 } from '../Animation-Properties/AnimaProps3';
-
 import Pic from'../../assets/spring().png'
 import { CENTERED } from '../Styled-Components/Centered';
 import { PANEL } from '../Styled-Components/Panel';
@@ -24,10 +22,6 @@ const Container = styled(CONTAINER)`
 `;
 
 const Left = styled(LEFT)`
-
-`;
-
-const Right = styled(RIGHT)`
 
 `;
 

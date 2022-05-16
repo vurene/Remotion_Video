@@ -10,7 +10,6 @@ import Lgo from '../../assets/logotitle.png'
 //_______Styled-Components____________
 
 const Container = styled(ABSO_FILL)`
-
 `;
 
 const Text = styled(TEXT)`
@@ -20,13 +19,10 @@ transform: translateY(-10px);
 `;
 
 const Text2 = styled(TEXT2)`
-
 margin-bottom: 5px;
-
 `;
 
 const TextBlue = styled(TEXT_B)`
-	
 `;
 
 
@@ -44,9 +40,8 @@ const FadeIn = interpolate(frame, [170, 230],[ 0,1 ],
 			{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})	
 
 
-
 	return (
-		<Container>
+<Container>
 	
 			<br />
 			<br />
@@ -100,11 +95,6 @@ const FadeIn = interpolate(frame, [170, 230],[ 0,1 ],
       <br/>  </Text2>
 		
 		</Text> 
-
-		</Container>
-
-
-
-
+</Container>
 	);
 };

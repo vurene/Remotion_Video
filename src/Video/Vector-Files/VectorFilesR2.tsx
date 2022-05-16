@@ -1,7 +1,8 @@
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, 
+	Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
-import { TITLE_B } from '../Styled-Components/TitleBlue';
+
 import Pic1 from '../../assets/SVG-Basics.png';
 import Pic2 from'../../assets/geometry.png';
 
@@ -17,12 +18,14 @@ export const VectorFilesR2: React.FC = () => {
 
 // import frame from useCurrentFrame()
 const frame = useCurrentFrame();
-	// Spring function for Animating Opacity of Picture1 ( Fading it out )
-	const FadeOut = interpolate(frame, [300,360],[1,0],{
+
+// Spring function for Animating Opacity of Picture1 ( Fading it out )
+const FadeOut = interpolate(frame, [300,360],[1,0],{
 
 		extrapolateRight:'clamp',
 		extrapolateLeft:'clamp'
 		})
+
 	// Spring function for Animating Opacity of Picture2 ( Fading it in )
 	const FadeIn = interpolate(frame, [300,360],[0,1],{
 		
@@ -30,6 +33,7 @@ const frame = useCurrentFrame();
 		extrapolateLeft:'clamp'
 		})
 
+		
 	return (
 
 	<Container>

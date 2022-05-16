@@ -1,6 +1,6 @@
-import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { AbsoluteFill, Img, Easing, useCurrentFrame, 
+  useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
-
 import { Ellipse } from '../Intro/Ellipse';
 
 
@@ -60,7 +60,7 @@ const { fps, width, height } = useVideoConfig();
   const Scaler = interpolate(scaleProgress, [0, 1], [2, 1.1]);
 
 
-//spring functions init
+//first spring function for interpolate modulation
   const spring1 = spring({
     fps,
     frame: frame,
@@ -69,7 +69,7 @@ const { fps, width, height } = useVideoConfig();
       damping: 200,
     },
   });
-
+//second spring function for interpolate modulation
   const spring2 = spring({
     fps,
     frame: frame - 10,
@@ -79,7 +79,7 @@ const { fps, width, height } = useVideoConfig();
     },
   });
 
-
+// spring for Opacity 
   const sourceCode = spring({
     fps,
     frame: frame - 60,
@@ -90,7 +90,7 @@ const { fps, width, height } = useVideoConfig();
   });
 
 
-  
+  // Offsets for using in movement via Translate
   const OFFSET = interpolate(spring1, [0, 1], [1080, 0]);
   const OFFSET2 = interpolate(spring2, [0, 1], [1080, 0]);
 
@@ -118,6 +118,8 @@ const { fps, width, height } = useVideoConfig();
         color: "white",
       }}
     >
+
+
       <AbsoluteFill
         style={{
           transform: `scale(${Scaler})`,
@@ -149,7 +151,7 @@ const { fps, width, height } = useVideoConfig();
             <Text> </Text>
             <Text>video </Text>
             <Text>was</Text>
-          </div>
+          </div>         
           <div style={{ transform: `translateY(${OFFSET2}px)` }}>
             <Text>made </Text>
          

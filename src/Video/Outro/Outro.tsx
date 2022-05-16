@@ -1,12 +1,11 @@
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { TEXT } from '../Styled-Components/Text';
 import { TEXT2 } from '../Styled-Components/Text2';
-import { TITLE_B } from '../Styled-Components/TitleBlue';
-import CodePic from '../../assets/interpolate().png';
 import { LINK } from '../Styled-Components/Link';
-import { TEXT_B } from '../Styled-Components/TextBlue';
+
 
 //___________Styled Components______________
 

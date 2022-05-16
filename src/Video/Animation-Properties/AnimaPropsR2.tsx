@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
-
-
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import CodePic from '../../assets/interpolate2.png';
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 
@@ -14,8 +13,8 @@ const Container = styled(ABSO_FILL)`
 
 export const AnimaPropsR2: React.FC = () => {
 
-
-const frame = useCurrentFrame();		// import frame from useCurrentFrame() hook to be used in the following interpolate function
+// import frame from useCurrentFrame() hook to be used in the following interpolate function
+const frame = useCurrentFrame();		
 
 // interpolate function for animating Opacity of text
 const Opac = interpolate(frame, [170,200],[0,1],
