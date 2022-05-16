@@ -8,6 +8,49 @@
 
 Welcome to your Remotion project!
 
+
+## File Structure 
+
+src/ entails the Code and the assets used and the Video.tsx & index.tsx File
+
+In Video.tsx are the Compositions used for the Video.
+
+in src/assets/ are the images, vector files and the soundtrack
+
+src/Video/ has all the folders with code and the Sequence.tsx file in which all the sequences of the Video are gathered and put into their respective timeline
+
+
+The themes of the Video are as follows:
+
+src/Video/Fundamentals
+src/Video/Animating Properties
+src/Video/Translate()
+src/Video/Vector-Files
+src/Video/Audio-Template
+
+
+The files in the themes are being structured into scenes, which are found in the src/Video/Scenes folder and gathered into the sequence.tsx folder.
+All scenes are numbered, showing their respective place in the timeline.
+
+
+src/Video/Intro
+src/Video/Outro 
+
+are folders with their components used in their scenes
+
+
+src/Video/Styled-Components contains all reusable CSS components
+
+
+src/Video/helpers contains simple objects used in the video
+
+
+src/Video/components contains animations used in the video 
+
+
+src/Video/Code-Templates contains simple templates. These were used for screenshots and were never used as components for the video.
+
+
 ## Commands
 
 **Install Dependencies**

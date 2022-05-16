@@ -5,6 +5,7 @@ import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, 
 import CodePic from '../../assets/interpolate2.png';
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 
+//_______Styled-Components____________
 
 const Container = styled(ABSO_FILL)`
 
@@ -13,12 +14,14 @@ const Container = styled(ABSO_FILL)`
 
 export const AnimaPropsR2: React.FC = () => {
 
-const config = useVideoConfig();
-const frame = useCurrentFrame();
 
+const frame = useCurrentFrame();		// import frame from useCurrentFrame() hook to be used in the following interpolate function
+
+// interpolate function for animating Opacity of text
 const Opac = interpolate(frame, [170,200],[0,1],
 	{extrapolateLeft: 'clamp', extrapolateRight:'clamp'}
-	)
+	);
+
 
 	return (
 

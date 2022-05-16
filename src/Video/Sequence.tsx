@@ -19,7 +19,6 @@ import { Scene11 } from "./Scenes/Scene11";
 import { Showcase } from "./Scenes/Showcase";
 import { Scene0 } from "./Scenes/Scene0";
 import { Scene35 } from "./Scenes/Scene35";
-import { Showcase2 } from "./Scenes/Showcase2";
 import { AudioFile } from "./helpers/AudioFile";
 import { SceneOutro } from "./Scenes/SceneOutro";
 import { RemotionLogoOutro } from "./Scenes/RemotionLogoOutro";
@@ -35,17 +34,20 @@ export const Main = () => {
 
 
     <>
-<AudioFile/>
+ {/*     Audio Component for Soundtrack implementation       */}
+
+    <AudioFile/>
+
 
       <Series>
   
-{/*               Logo                        */}
+{/*                Intro                      */}
 
 <Series.Sequence durationInFrames={120}>
           <Intro/>
         </Series.Sequence>
 
-{/*               Logo                        */}
+{/*                 Logo                        */}
 
         <Series.Sequence durationInFrames={120}>
           <RemotionLogoIntro/>
@@ -81,7 +83,7 @@ export const Main = () => {
           <Scene3/>
         </Series.Sequence>
 
-  {/*      Fundamentals - Compositions              */}
+  {/*      Fundamentals - Remotion Player Compositions            */}
 
         <Series.Sequence durationInFrames={480}>
           <Scene35/>

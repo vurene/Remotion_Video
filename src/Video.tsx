@@ -7,9 +7,14 @@ import { RectStarIn } from './Video/components/RectStarIn'
 import { Showcase } from './Video/Scenes/Showcase';
 
 
+
+
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
+
+
+{/*  		Main Composition of the Project	   */}
 			<Composition
 				id="Main"
 				component={Main}
@@ -25,7 +30,7 @@ export const RemotionVideo: React.FC = () => {
 			{/* <Composition
 				id="Main"
 				component={Main}
-				durationInFrames={7199}
+				durationInFrames={7199} 
 				fps={30}
 				width={1920}
 				height={1080}
@@ -34,6 +39,8 @@ export const RemotionVideo: React.FC = () => {
 					titleColor: 'black',
 				}}
 			/> */}
+
+			{/* Composition for building Rectangle Animation	*/}
 			<Composition
 				id="Rectangle"
 				component={RectStarIn}
@@ -42,6 +49,7 @@ export const RemotionVideo: React.FC = () => {
 				width={1280}
 				height={720}
 			/>
+				{/* Composition for creating the Intro	*/}
 				<Composition
 				id="Intro"
 				component={Intro}
@@ -50,6 +58,7 @@ export const RemotionVideo: React.FC = () => {
 				width={1280}
 				height={720}
 			/>
+			{/* Composition for creating Showcase	*/}	
 		<Composition
 				id="Test"
 				component={Showcase}

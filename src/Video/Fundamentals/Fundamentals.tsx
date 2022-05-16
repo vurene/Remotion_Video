@@ -3,10 +3,15 @@ import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { LINK } from '../Styled-Components/Link';
 import { TEXT } from '../Styled-Components/Text';
 import { TEXT2 } from '../Styled-Components/Text2';
-// import {Triangle} from './Logo/Triangle';
+
+
+
+
+
+
+
 
 //_______Styled-Components____________
-
 
 const Container = styled(ABSO_FILL)`
 

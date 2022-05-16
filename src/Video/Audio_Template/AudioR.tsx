@@ -8,8 +8,6 @@ import Aud from '../../assets/audio.png';
 
 //__________Styled-Components____________
 
-
-
 const Container = styled(ABSO_FILL)`
 
 `;
@@ -25,7 +23,6 @@ export const AudioR: React.FC = () => {
 	return (
 		<Container>
 <Img src={Aud} />
-		
 		</Container>
 	);
 };

@@ -15,7 +15,6 @@ const Container = styled(ABSO_FILL)`
 
 `;
 
-
 const Title = styled(TITLE_B)`
 
 `;
@@ -29,7 +28,6 @@ margin-right: 35px;
 transform: translateY(30px);
 margin-left: 20px;
 `;
-
 
 // Fade-in Text Component for Showcase of Animation
 
@@ -48,46 +46,40 @@ transform: translate(-30px,10px);
 
 export const AnimaProps: React.FC = () => {
 
-	const config = useVideoConfig();
-	const frame = useCurrentFrame();
+// import frame from useCurrentFrame() hook to be used in the following interpolate function				
+	const frame = useCurrentFrame(); 			
 
+// interpolate function for animating Opacity of text
 	const Opac = interpolate(frame, [250, 280],[0,1],
 		{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})
-
 
 
  
 	return (
 
-
-		<Container>
-			<div style={{height: 50, width: 150, transform: `rotate(3600deg)`}}>
-	
-			</div>
-				<br />
-
-			<Title style={{transform: `translate(0px,0px)`}}>Animating properties</Title>
+	<Container>
+		<br />
+		<Title style={{transform: `translate(0px,0px)`}}>Animating properties</Title>
 			<Text style={{transform: `translate(0px,-40px)`}}>
-				<br/>
-			<Text2>Animation is all about how properties change over time. 
-				<br/>
-			<br />Let's start with a simple example, 
-			<br/>let's say we want to create a fade-in animation.
-				<br/>
-			<br/> If we want to fade the text in over 20 frames,
-			<br /> we need to gradually change the opacity style over time
-			<br/>
-			<Opacity style={{ opacity: Opac}}>
-				<br/>
-					so that it goes from 0 to 1.</Opacity></Text2>
-
-				<br/>
+		<br/>
+				<Text2>Animation is all about how properties change over time. 
+		<br/>
+		<br />Let's start with a simple example, 
+		<br/>let's say we want to create a fade-in animation.
+		<br/>
+		<br/> If we want to fade the text in over 20 frames,
+		<br /> we need to gradually change the opacity style over time
+		<br/>
+					<Opacity style={{ opacity: Opac}}>
+		<br/>
+					so that it goes from 0 to 1.
+					</Opacity>
+				</Text2>
+		<br/>
 			</Text>
-
-
+			
 			<Img src={CodePic} style={{											
 																transform:`translate(180px, -30px)`}}/>
-
-		</Container>
+	</Container>
 	);
 };

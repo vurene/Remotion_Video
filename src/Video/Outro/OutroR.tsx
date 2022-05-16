@@ -8,13 +8,14 @@ import CodePic from '../../assets/interpolate().png';
 import { LINK } from '../Styled-Components/Link';
 import { TEXT_B } from '../Styled-Components/TextBlue';
 
+
+
+
 //___________Styled Components______________
 
-// Absolute-Fill 
 const Container = styled(ABSO_FILL)`
 
 `;
-
 
 const Title = styled(TITLE_B)`
 
@@ -30,17 +31,6 @@ transform: translateY(30px);
 margin-left: 20px;
 `;
 
-const Link = styled(LINK)`
-font-size: 40px;
-`;
-
-const TextBlue = styled(TEXT_B)`
-
-
-
-`
-//______________Exports______________________
-
 
 
 export const OutroR: React.FC = () => {
@@ -49,12 +39,7 @@ export const OutroR: React.FC = () => {
 
 
 		<Container>
-
-
-   
 				<br />
-
-	
         <Title style={{transform: `translate(-10px,-30px)`}}>
                         Credits</Title>
 			<Text style={{transform: `translate(0px,-60px)`}}>
@@ -62,17 +47,11 @@ export const OutroR: React.FC = () => {
 			<Text2 >Video by Rene Vukorepa
 				<br/>
 			<br />
-
 			<br/>
-      Music by
-
-    Felix Heinrich 
-   
-        
-</Text2>
-			</Text>
-
-
+     					 Music by
+   					 Felix Heinrich       
+			</Text2>
+			</Text>	
 		</Container>
 	);
 };

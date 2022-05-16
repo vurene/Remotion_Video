@@ -8,43 +8,39 @@ import Pic2 from'../../assets/geometry.png';
 
 //__________Styled-Components____________
 
-
 const Container = styled(ABSO_FILL)`
 
 `;
 
-const Title = styled(TITLE_B)`
-
-`;
-
-
 
 export const VectorFilesR2: React.FC = () => {
-const config = useVideoConfig();
-const frame = useCurrentFrame();
 
+// import frame from useCurrentFrame()
+const frame = useCurrentFrame();
+	// Spring function for Animating Opacity of Picture1 ( Fading it out )
 	const FadeOut = interpolate(frame, [300,360],[1,0],{
 
 		extrapolateRight:'clamp',
 		extrapolateLeft:'clamp'
 		})
+	// Spring function for Animating Opacity of Picture2 ( Fading it in )
+	const FadeIn = interpolate(frame, [300,360],[0,1],{
 		
-		const FadeIn = interpolate(frame, [300,360],[0,1],{
-		
-			extrapolateRight:'clamp',
-			extrapolateLeft:'clamp'
-			})
+		extrapolateRight:'clamp',
+		extrapolateLeft:'clamp'
+		})
 
 	return (
 
-		<Container>
-		<Img src={Pic1} style={{opacity: FadeOut,
+	<Container>
+		
+			<Img src={Pic1} style={{opacity: FadeOut,
 														transform: `translate(650px,450px)`
 														}} />
-		<Img src={Pic2} style={{opacity: FadeIn,
+			<Img src={Pic2} style={{opacity: FadeIn,
 														transform: `translate(650px,-140px)`		
 		}} />
 
-		</Container>
+	</Container>
 	);
 };

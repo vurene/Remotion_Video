@@ -1,6 +1,8 @@
 import { useCurrentFrame } from "remotion";
 
 export const MyVideo = () => {
+
+  
   const frame = useCurrentFrame();
  
   const opacity = frame >= 20 ? 1 : frame / 20;

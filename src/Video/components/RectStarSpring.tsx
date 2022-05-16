@@ -2,10 +2,10 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Seq
 
 
  import styled from 'styled-components';
- import { RectBorder } from './RectangleSolidBorder';
+ import { RectBorder } from '../helpers/RectangleSolidBorder';
 
 
- //  https://youtu.be/UyZFNSEMmT8?t=134
+//___________Styled_Components___________
 
 
  const SubRect = styled(RectBorder)`

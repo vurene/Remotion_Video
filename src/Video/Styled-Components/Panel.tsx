@@ -1,11 +1,11 @@
 //___________Imports____________
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion';
 import styled from 'styled-components';
-import { RADIUS }from '../helpers/radius';
+
 
 //_______Styled-Components____________
 
-const Radius = RADIUS;  
+const Radius = 30;  
 
 export const PANEL = styled.div`
 	position: absolute;
@@ -15,5 +15,5 @@ export const PANEL = styled.div`
 	display: flex;
 	justify-content: center; 
 	align-items: center;
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.07);
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
 `;

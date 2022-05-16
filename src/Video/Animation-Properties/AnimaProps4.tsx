@@ -10,6 +10,7 @@ import { TITLE_B } from '../Styled-Components/TitleBlue';
 
 
 
+//_______Styled-Components____________
 
 const Container = styled(ABSO_FILL)`
 
@@ -22,11 +23,9 @@ transform: translateY(-190px);
 
 const Text = styled(TEXT)`
 
-	margin-left: 30px;
-	transform: translateY(-80px);
-		`;
-
-
+margin-left: 30px;
+transform: translateY(-80px);
+`;
 
 export const AnimaProps4: React.FC = () => {
 

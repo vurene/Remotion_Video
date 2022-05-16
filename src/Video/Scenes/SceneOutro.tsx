@@ -41,17 +41,17 @@ const Centered = styled(CENTERED)`
 
 export const SceneOutro: React.FC = () => {
 
-	const {fps, width, height} = useVideoConfig(); // import default props from VideoConfig
-
-	const PADDING = 80;														// set base value for Panels padding						
-	const SPACING = 50;														// set base value for Panels spacing
+	const {fps, width, height} = useVideoConfig(); 	// import default props from VideoConfig
+	const frame = useCurrentFrame(); 								//import frame from useCurrentFrame()
+	const PADDING = 80;															// set base value for Panels padding						
+	const SPACING = 50;															// set base value for Panels spacing
 	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 2;	// set Width from Panel 1	
 	const PANEL_WIDTH2 = (width - PADDING * 1 - SPACING) / 2; // set Width from Panel 2
 	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 1.5; // set Height from Panel 1
 	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1;	// set Height from Panel 1
 
 
-	const frame = useCurrentFrame(); //import frame from useCurrentFrame()
+
 
 
 // Spring function for timing the CSS functions
@@ -87,7 +87,7 @@ export const SceneOutro: React.FC = () => {
 				</Left>
 				<div style={{width: 30}} />
 				<Right>
-				<Panel
+					<Panel
 						style={{
 							opacity: progress(4),
 							transform: `scale(${progress(2 )})translateY(60px)`,

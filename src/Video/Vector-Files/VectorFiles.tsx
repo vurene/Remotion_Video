@@ -10,7 +10,6 @@ import { TITLE_B } from '../Styled-Components/TitleBlue';
 
 //__________Styled-Components____________
 
-
 const Container = styled(ABSO_FILL)`
 
 `;
@@ -21,20 +20,17 @@ const Title = styled(TITLE_B)`
 
 const Text = styled(TEXT)`
 
-	margin: 40px;
-		`
-
+margin: 40px;
+		`;
+		
 const Text2 = styled(TEXT2)`
 transform: translateY(30px);
 
 	`;
 
-
 const TextBlue = styled(TEXT_B)`
 
 `;
-
-
 
 
 export const VectorFiles: React.FC = () => {

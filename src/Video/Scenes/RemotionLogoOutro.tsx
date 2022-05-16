@@ -6,6 +6,7 @@ import  Logo  from "../../assets/logotitle.png";
 
 
 
+//_______Styled-Components____________
 
 
 const Text = styled.span`
@@ -20,25 +21,19 @@ font-family: Arial, Helvetica, sans-serif;
   transform: translateY(-550px);
 `
 
-
 const Container = styled.div`
 transform:scale(0.2); 
-
   
 `;
 
 
-
 export const RemotionLogoOutro: React.FC = () => {
+// import fps prop from VideoConfig
+  const { fps } = useVideoConfig();     
+// import frame from useCurrentFrame()
+  const frame = useCurrentFrame();      
 
-  const { fps } = useVideoConfig();
-  const frame = useCurrentFrame();
-
-const Opac = interpolate(frame, [10,140],[0,1],
-{
-extrapolateLeft: 'clamp',  
-extrapolateRight:'clamp'
-});
+// Spring function for timing the CSS functions
   const enterLogo = spring({ 
     fps,
     frame: frame,
@@ -49,6 +44,7 @@ extrapolateRight:'clamp'
     },
   });
 
+  
   return (
     <AbsoluteFill
       style={{
@@ -58,9 +54,7 @@ extrapolateRight:'clamp'
         backdropFilter: "blur(" + 20 * enterLogo + "px)",
       }}
     >
-<Container>/
-
-
+<Container>
 
       <Img
         style={{

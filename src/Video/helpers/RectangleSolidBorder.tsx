@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-//  Rectangle with white solid border 
+//  Rectangle with white solid border for RectStarIn & RectStarSpring Components
 
 export const RectBorder = styled.div`
   

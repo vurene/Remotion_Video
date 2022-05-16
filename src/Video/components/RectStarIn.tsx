@@ -2,10 +2,10 @@ import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, 
 
 
  import styled from 'styled-components';
- import { RectBorder } from './RectangleSolidBorder';
+ import { RectBorder } from '../helpers/RectangleSolidBorder';
 
 
- //  https://youtu.be/UyZFNSEMmT8?t=134
+//___________Styled_Components___________
 
 
  const SubRect = styled(RectBorder)`
@@ -32,12 +32,9 @@ const SubRect4 = styled(RectBorder)`
 
  export const RectStarIn: React.FC <{}> = ({}) => {
 
-  const config = useVideoConfig();
+ // import frame from useCurrentFrame() 
   const frame = useCurrentFrame();
-  const duration = 60;
 
-  // const som = frame % duration;
-  // console.log(som)
 
   const RotatorSub  = interpolate(frame, [0,60],[0,45], {extrapolateRight:'clamp',extrapolateLeft: 'clamp', easing: Easing.ease})
   const RotatorSub1 = interpolate(frame, [0,60],[0,60], {extrapolateRight:'clamp',extrapolateLeft: 'clamp',})
@@ -51,6 +48,7 @@ const SubRect4 = styled(RectBorder)`
 
 
 return (
+  
 <AbsoluteFill
 style={{
 backgroundColor: 'transparent',
