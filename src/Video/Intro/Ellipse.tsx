@@ -12,11 +12,20 @@ export const Ellipse: React.FC<{
   frame: number;
 
 }> = ({ frame, rotation }) => {
+
+//import default props from VideoConfig()  
   const { height, width, fps } = useVideoConfig();
+
   const rx = 180 / 2 ;
   const ry = 400 / 2 ;
+
+
+// Variable for the Length with PI for making a circle
   const arcLength = Math.PI * 2 * Math.sqrt((rx * rx + ry * ry) / 2);
 
+
+
+  // Spring function for Timing of StrokeDashOffset
   const progress = spring({
     frame,
     fps,
@@ -26,29 +35,29 @@ export const Ellipse: React.FC<{
     },
   });
 
-
-
-
-
-  const opacity = interpolate(progress, [0, 0.2], [0, 1], {
+// Opacity for SVG 
+  const Opacity = interpolate(progress, [0, 0.2], [0, 1], {
     extrapolateRight: "clamp",
     extrapolateLeft: "clamp",
   });
-
+// Interpolate Function for strokewidth of SVG-Animation
   const strokeWidth = interpolate(progress, [0, 1], [200, 70],{
     extrapolateRight: "clamp",
     extrapolateLeft: "clamp",
   });
 
   return (
-    <g
+
+//_____________SVG Ellipse________________
+<g
       style={{
         transform: `rotate(${rotation}deg)`,
-        opacity,
+        opacity: Opacity,
         transformOrigin: "50% 50%",
       }}
     >
-      <ellipse
+
+     <ellipse
         cx={width / 2}
         cy={height / 2}
         x={width / 2}
@@ -61,7 +70,8 @@ export const Ellipse: React.FC<{
         stroke="url(#lg)"
         strokeWidth={strokeWidth/3}
         fill="none"
+      
       />
-    </g>
+</g>
   );
 };

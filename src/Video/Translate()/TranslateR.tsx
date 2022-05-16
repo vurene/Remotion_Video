@@ -43,16 +43,17 @@ const MoveLeft = interpolate(frame, [150,200],[700,0],
 
 	return (
 		<Container>
-			<Title>
+			
 			<Text>	
 							In order to bring movement into our assets, <br/><br/>
 							we can use CSS in combination with <br/>
 			 				animating properties like<br/> <br/>
 			 				interpolate() and spring()
 			 </Text>
-			 </Title>
+		
 
 	<Img src={Pic} style={{transform: `translate(${MoveLeft}px, 10px)`}}/>	
-		</Container>
+	
+	</Container>
 	);
 };

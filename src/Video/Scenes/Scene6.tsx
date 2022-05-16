@@ -2,7 +2,7 @@ import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, 
 import styled from 'styled-components';
 
 
-import { AnimaProps3 } from '../Animation-props/AnimaProps3';
+import { AnimaProps3 } from '../Animation-Properties/AnimaProps3';
 
 import Pic from'../../assets/spring().png'
 import { CENTERED } from '../Styled-Components/Centered';

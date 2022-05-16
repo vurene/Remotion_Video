@@ -5,7 +5,8 @@ import { Ellipse } from '../Intro/Ellipse';
 
 
 
-// Container 
+//_______Styled-Components____________
+
 const Container = styled.div`
   flex: 1;
   display: flex;
@@ -13,6 +14,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 `;
+
 const ZIndex1 = styled.div`
   flex: 1;
   display: flex;
@@ -32,13 +34,18 @@ const Text = styled.span`
   white-space: pre;
 `;
 
-const coloe = "#16181D" // background-color
+// background-color
+const coloe = "#16181D" 
 
 export const Intro: React.FC<{  }> = ({  }) => {
- const frame = useCurrentFrame();
-  const { fps, width, height } = useVideoConfig();
 
+// import frame from useCurrentFrame()
+const frame = useCurrentFrame();
 
+// import default props from VideoConfig 
+const { fps, width, height } = useVideoConfig();
+
+// Spring-Function for Timing interpolate "Scaler"
   const scaleProgress = spring({
     fps,
     frame: frame,
@@ -49,9 +56,11 @@ export const Intro: React.FC<{  }> = ({  }) => {
   });
 
 
-  // scale variable for all Elements
+// interpolate Funnction for scaling AbsoluteFill
   const Scaler = interpolate(scaleProgress, [0, 1], [2, 1.1]);
-  //spring functions init
+
+
+//spring functions init
   const spring1 = spring({
     fps,
     frame: frame,
@@ -85,6 +94,9 @@ export const Intro: React.FC<{  }> = ({  }) => {
   const OFFSET = interpolate(spring1, [0, 1], [1080, 0]);
   const OFFSET2 = interpolate(spring2, [0, 1], [1080, 0]);
 
+
+  //  initializing the Component for the Animation & inserting the 3 Ellipses, 
+  //  each having a different angle of rotation and a different "frame" value to start the animation
   const arcs = (
     <>
 
@@ -94,13 +106,14 @@ export const Intro: React.FC<{  }> = ({  }) => {
     </>
   );
 
+// initializing opacity with value "1" = always visible.
   const opacity = 1;
  
 
   return (
     <Container
       style={{
-        opacity,
+        opacity: opacity,
         background: coloe,
         color: "white",
       }}
@@ -117,11 +130,15 @@ export const Intro: React.FC<{  }> = ({  }) => {
             position: "absolute",
           }}
         >
+
+
           <defs>
             <linearGradient id="lg">
               <stop stopColor="#326cb8" offset="0" />
               <stop stopColor="#2fa8b1" offset="1" />
             </linearGradient>
+
+
             <mask id="mask">{arcs}</mask>
           </defs>
           {arcs}
@@ -131,7 +148,7 @@ export const Intro: React.FC<{  }> = ({  }) => {
             <Text>This</Text>
             <Text> </Text>
             <Text>video </Text>
-            <Text>is</Text>
+            <Text>was</Text>
           </div>
           <div style={{ transform: `translateY(${OFFSET2}px)` }}>
             <Text>made </Text>

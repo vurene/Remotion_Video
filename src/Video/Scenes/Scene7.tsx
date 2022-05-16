@@ -1,8 +1,8 @@
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import styled from 'styled-components';
 
-import { AnimaProps4 } from '../Animation-props/AnimaProps4';
-import { AnimaPropsR4 } from '../Animation-props/AnimaPropsR4';
+import { AnimaProps4 } from '../Animation-Properties/AnimaProps4';
+import { AnimaPropsR4 } from '../Animation-Properties/AnimaPropsR4';
 import { CENTERED } from '../Styled-Components/Centered';
 import { CONTAINER } from '../Styled-Components/Container';
 import { LEFT } from '../Styled-Components/Left';

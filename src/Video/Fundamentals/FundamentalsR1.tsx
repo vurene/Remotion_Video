@@ -12,8 +12,11 @@ const Container = styled(ABSO_FILL)`
 
 export const FundamentalsR1: React.FC = () => {
 
-const config = useVideoConfig(); // import default prop  from VideoConfig Hook
-const frame = useCurrentFrame(); // import default prop from useCurrentFrame
+// import default prop  from VideoConfig Hook
+const config = useVideoConfig(); 
+
+// import default prop from useCurrentFrame
+const frame = useCurrentFrame(); 
  
 
 // Spring function for scaling picture
@@ -30,6 +33,7 @@ const Scale = spring({
 
 	return (
 		<Container>
+{/* Image Component with Scale Animation */}
 		<Img src={VidPic}
 		style={{
 			transform: `translate(370px,0px)scale(${Scale})`

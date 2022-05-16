@@ -21,20 +21,19 @@ font-family: Arial, Helvetica, sans-serif;
   transform: translateY(-550px);
 `
 
-
 const Container = styled.div`
 transform:scale(0.2); 
   
 `;
 
 
-
 export const RemotionLogoOutro: React.FC = () => {
+// import fps prop from VideoConfig
+  const { fps } = useVideoConfig();     
+// import frame from useCurrentFrame()
+  const frame = useCurrentFrame();      
 
-  const { fps } = useVideoConfig();
-  const frame = useCurrentFrame();
-
-
+// Spring function for timing the CSS functions
   const enterLogo = spring({ 
     fps,
     frame: frame,
@@ -45,6 +44,7 @@ export const RemotionLogoOutro: React.FC = () => {
     },
   });
 
+  
   return (
     <AbsoluteFill
       style={{
@@ -54,9 +54,7 @@ export const RemotionLogoOutro: React.FC = () => {
         backdropFilter: "blur(" + 20 * enterLogo + "px)",
       }}
     >
-<Container>/
-
-
+<Container>
 
       <Img
         style={{

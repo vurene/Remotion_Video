@@ -18,26 +18,21 @@ import { Translate } from '../Translate()/Translate';
 
 
 
-//___________Container is the primary component, 
 const Container = styled(ABSO_FILL)`
 transform: translate(0px,-100px);
-`   
-
-
-//___________Title_________________
+`;
 
 const Title = styled(TITLE_B)`
 
 `;
 
 const Text = styled(TEXT)`
-
-		`;
+`;
 
 const Text2 = styled(TEXT2)`
 transform: translateY(30px);
 margin-left: 20px;
-	`;
+`;
 
 const Spring = styled(TEXT2)`
 
@@ -64,11 +59,12 @@ margin-left: 20px;
 //______________Exports______________________
 
 export const AnimaProps3: React.FC = () => {
+
 //import fps from useVideoConfig() for the following spring function
 	const {fps} = useVideoConfig();		
-// import frame from useCurrentFrame() hook to be used in the following interpolate functions
-	const frame = useCurrentFrame(); 
 
+	// import frame from useCurrentFrame() hook to be used in the following interpolate functions
+	const frame = useCurrentFrame(); 
 
 // interpolate function for the opacity modulation of <Link>component (Remotion.dev)
 
@@ -115,40 +111,39 @@ const Spring1 = spring({
 	return (
 
 		
-		<Container>
-		
-			<br />
-		
-			<Title style={{
+<Container>
+	<br />
+	<Title style={{
 				transform: `translateY(800px) translateX(10px)` 
 				}}>spring( ) function
 			</Title>
 
-			<Text style={{
-				 
+		<Text style={{
 				transform: `translate(-100px, 730px)` 
 				}}>
-			<br/>
-			<Text2  style={{ 
+
+<br/>
+		<Text2  style={{ 
 							opacity:Fadeout,
 							transform: `translateY(60px)` 	}}>
 			<TextBlue>	spring( ) functions</TextBlue>  are similar to 
 			<TextBlue> interpolate( ) functions</TextBlue>
-			<br /> except they seem to make motion more natural.
-			<br />The default spring configuration leads to a little bit of overshoot, 
-			<br/>meaning the text in this case, 
+<br /> 	except they seem to make motion more natural.
+<br />	The default spring configuration leads to a little bit of overshoot, 
+<br/>		meaning the text in this case, 
 			
 			
 			<Spring style={{transform: `scale(${Spring1})`}}>
 
 				will bounce a little bit
 			</Spring>
-			<Text3 style={{ opacity: FadeInText, transform: `translate(-20px, 20px)`	}}>
-			<br/>
+		<Text3 style={{ opacity: FadeInText, transform: `translate(-20px, 20px)`	}}>
+	<br/>
 					See the reference page on 
-			<br/>
+	<br/>
 
-{/*				 Start of Link component 			 */}
+{/*________________Start of Link component____________________________________ */}
+
 			<Link>
 			<a
 				href="https://https://www.remotion.dev//"
@@ -159,16 +154,16 @@ const Spring1 = spring({
 				}}
 			>Remotion.dev 
 			</a>	 
-			</Link>
-										
-		</Text3>
+			</Link>									
+			</Text3>
 
-			<br/>
-			<br/>
-			<br /> 
-			<br/>
+<br/>
+<br/>
+<br /> 
+<br/>
 			</Text2>
-			<br/></Text>
+<br/>
+			</Text>
 		
 
 
@@ -181,33 +176,34 @@ const Spring1 = spring({
 <Text 
 style= {{opacity:  Fadeout2,
 				 transform: `translateY(-220px)translateX(-180px)`}}>
-				<Text2 style= {{opacity: Fadein2,}}>
-				<Img src={Pic2} 
+	<Text2 style= {{opacity: Fadein2,}}>
+
+	<Img src={Pic2} 
 				style={{
 		 						transform:`translate(700px,390px)	scale(1)`}}/>
 											
 
 <br/>
-spring() has the following parameters: 
+				spring() has the following parameters: 
 <br/>
 <br/>
-<TextBlue>- frame </TextBlue>
-<TextBlue>- from</TextBlue>
-<TextBlue>- to </TextBlue>
-<TextBlue>- fps</TextBlue>
-<TextBlue>- config </TextBlue>
+	<TextBlue>- frame </TextBlue>
+	<TextBlue>- from</TextBlue>
+	<TextBlue>- to </TextBlue>
+	<TextBlue>- fps</TextBlue>
+	<TextBlue>- config </TextBlue>
 <br/>
-config is optional object that allows you to customize
+				config is optional object that allows you to customize
 <br/>
-the physical properties of the animation.
-</Text2>
+				the physical properties of the animation.
+	</Text2>
 </Text>
 
 
 
-{/*______________ Third Text Layer _____________*/}
+{/*_________________________________ Third Text Layer _________________________*/}
 
-			<Text style={{
+		<Text style={{
 				opacity: Fadein3,
 				transform: `translateY(-560px)translateX(-10px)`}}>
 			The following example will showcase the difference between the two functions. 
@@ -215,12 +211,12 @@ the physical properties of the animation.
 			<br/> 
 			we will use the CSS function 
 			<br/> 
-			<TextBlue>
+				<TextBlue>
 				scale()
-			</TextBlue> 
+				</TextBlue> 
 			<br/> 
 			with the value 
-			<TextBlue>
+				<TextBlue>
 			 0.4 to 0.1  
 			 </TextBlue>
 			<br/> 
@@ -228,9 +224,9 @@ the physical properties of the animation.
 			<br/> 
 		 	<br/>
 		 	<br/>
-			 <br/>
+			<br/>
 		 	<br/>		
-				</Text>
+		</Text>
 				<Img src={Pic1} style={{ 
 					transform:`translate(140px,-660px)	scale(0.8)`,
 					opacity:FadeInPic							}}/>

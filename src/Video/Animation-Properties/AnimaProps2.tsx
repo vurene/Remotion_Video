@@ -7,9 +7,6 @@ import { TEXT_B } from '../Styled-Components/TextBlue';
 import { TITLE_B } from '../Styled-Components/TitleBlue';
 
 
-
-
-
 //___________Styled Components______________
 
 const Container = styled(ABSO_FILL)`
@@ -90,7 +87,7 @@ export const AnimaProps2: React.FC = () => {
 {/*______________ Second Text Layer _____________*/}
 
 		<Text style={{
-				opacity: Fadein2,
+				opacity: Fadein2,																			
 				transform: `translateY(-350px)translateX(-85px)`}}>
 			In this example,  
 			<br/>

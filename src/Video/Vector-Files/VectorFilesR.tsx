@@ -26,17 +26,18 @@ margin: 40px;
 
 export const VectorFilesR: React.FC = () => {
 
-	const config = useVideoConfig();
+	// import frame from useCurrentFrame()
 	const frame = useCurrentFrame();
 
+	// Spring function for scaling Vector File SVG
 	const Scaler = interpolate(frame, [150,360],[1,2.5],{ 
 		extrapolateRight:'clamp' }) 
 
 
 	return (
-		<Container style={{transform: `scale(${Scaler})`}}>
+				
+	<Container style={{transform: `scale(${Scaler})`}}>
 <svg 
-scale="${Scaler}"
 fill="white"
 viewBox="0 0 260.78 296.4">
 	<path d="M71.29,6H254.78V259.41c-.43,23.6-3.57,23.57-29,23.57H33c-23.71.21-27-.14-27-27.43V71.28Z" 

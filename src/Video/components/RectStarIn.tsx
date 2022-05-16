@@ -48,6 +48,7 @@ const SubRect4 = styled(RectBorder)`
 
 
 return (
+  
 <AbsoluteFill
 style={{
 backgroundColor: 'transparent',

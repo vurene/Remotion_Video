@@ -30,7 +30,7 @@ export const FundamentalsR: React.FC = () => {
 			<Text style ={{
 					textDecoration: 'none',
 					transform: `translateY(-15px) translateX(-15px`
-				}}> I'ts best to start with the documentation</Text>
+				}}> It's best to start with the documentation</Text>
 
 {/*				 Start Link insertion and linking        */}
 			<a

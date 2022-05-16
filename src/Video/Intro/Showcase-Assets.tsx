@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
-import Lgo from '../../assets/logotitle.png'
 import { ABSO_FILL } from '../Styled-Components/AbsoluteFill';
 import { TEXT } from '../Styled-Components/Text';
 import { TEXT2 } from '../Styled-Components/Text2';
 import { TEXT_B } from '../Styled-Components/TextBlue';
-
-
+import Lgo from '../../assets/logotitle.png'
 
 
 //_______Styled-Components____________
@@ -16,7 +14,6 @@ const Container = styled(ABSO_FILL)`
 `;
 
 const Text = styled(TEXT)`
-
 margin: 40px;
 margin-left: 80px;
 transform: translateY(-10px);
@@ -35,17 +32,16 @@ const TextBlue = styled(TEXT_B)`
 
 export const ShowcaseAssets: React.FC = () => {
 
+// import frame from useCurrentFrame()	
 const frame = useCurrentFrame();
+
+// Interpolate function for modulating Opacity of the First Text Layer(Fading it out)
 const Fadeout = interpolate(frame, [150, 170],[ 1,0 ],
 		{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})
-		const FadeIn = interpolate(frame, [170, 230],[ 0,1 ],
+
+// Interpolate function for modulating Opacity of the Second Text Layer (Fading it in)
+const FadeIn = interpolate(frame, [170, 230],[ 0,1 ],
 			{extrapolateLeft: 'clamp', extrapolateRight:'clamp'})	
-
-
-
-
-
-
 
 
 

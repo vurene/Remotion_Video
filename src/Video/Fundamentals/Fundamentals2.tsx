@@ -47,7 +47,8 @@ padding: 0px 5px 0px 5px ;
 
 export const Fundamentals2: React.FC = () => {
 
-const frame = useCurrentFrame(); // import frame from useCurrentFrame() hook to be used in the following interpolate function
+	// import frame from useCurrentFrame() hook to be used in the following interpolate function
+const frame = useCurrentFrame(); 
 
 // interpolate function for animating Opacity of Picture	
 const Opac = interpolate(frame, [190,210],[1,0],
@@ -55,10 +56,10 @@ const Opac = interpolate(frame, [190,210],[1,0],
 
 
 
-	return (
-		<Container>
-	
-			<Title>Fundamentals</Title>
+return (
+<Container>
+		<Title>Fundamentals</Title>
+{/* TextComponent  with Opacity Animation */}
 			<Text style={{
 				opacity: Opac, 
 				transform: `translate(0px,30px)`,
@@ -66,29 +67,22 @@ const Opac = interpolate(frame, [190,210],[1,0],
 			}}>
 				A video has following properties:  <br/> 
 			<Text2>
-				<div style={{ display:'flex' }}>
-			<TextBlau >height </TextBlau>
-			 <TextWhite> & </TextWhite>
-			<TextBlau> width </TextBlau>
-			<TextWhite>	in pixels. </TextWhite>
-				</div>
-			<br/>
-			
-			<TextBlau>durationInFrames</TextBlau>
-			<br/>
-	
-			
-			
-		<TextBlau>	fps</TextBlau> 
-		Value of frames per second
-			<br/> 
-			<br/>
+					<div style={{ display:'flex' }}>
+						<TextBlau >height </TextBlau>
+						<TextWhite> & </TextWhite>
+						<TextBlau> width </TextBlau>
+						<TextWhite>	in pixels. </TextWhite>
+					</div>
+				<br/>
+					<TextBlau>durationInFrames</TextBlau>
+				<br/>
+					<TextBlau>	fps</TextBlau> 
+						Value of frames per second
+				<br/> 
+				<br/>
 			</Text2>
-			<br/>
-			 
+				<br/>
 			</Text>
-			
-	
-		</Container>
+</Container>
 	);
 };

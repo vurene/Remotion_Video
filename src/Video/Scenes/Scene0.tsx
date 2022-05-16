@@ -42,14 +42,25 @@ const Centered = styled(CENTERED)`
 
 export const Scene0: React.FC = () => {
 
-	const {fps, width, height} = useVideoConfig(); // import default props from VideoConfig
-	const frame = useCurrentFrame(); 								//import frame from useCurrentFrame()
-	const PADDING = 80;														// set base value for Panels padding						
-	const SPACING = 50;														// set base value for Panels spacing
-	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 2;	// set Width from Panel 1	
-	const PANEL_WIDTH2 = (width - PADDING * 1 - SPACING) / 2; // set Width from Panel 2	
-	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 0.8; // set Width from Panel 1
-	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1.5; // set Width from Panel 2
+// import default props from VideoConfig
+	const {fps, width, height} = useVideoConfig(); 	
+	
+// import frame from useCurrentFrame()
+	const frame = useCurrentFrame(); 		
+	
+// set base value for Panels padding		
+	const PADDING = 80;							
+// set base value for Panels spacing													
+	const SPACING = 50;														
+
+// set Width from Panel 1	
+	const PANEL_WIDTH1 = (width - PADDING * 1 - SPACING) / 2;
+// set Width from Panel 2	
+	const PANEL_WIDTH2 = (width - PADDING * 1 - SPACING) / 2; 
+// set Width from Panel 1
+	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 0.8;
+// set Width from Panel 2
+	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1.5; 
 
 
 
@@ -68,7 +79,6 @@ export const Scene0: React.FC = () => {
 
 
 	return (
-
 
 		<Outer>
 			<Container>
@@ -94,7 +104,6 @@ export const Scene0: React.FC = () => {
 							height: SMALL_PANEL_HEIGHT2 ,
 						}}
 					>
-
 						<Centered style={{opacity: progress(3)}}>
 							<FundamentalsR />
 						</Centered>

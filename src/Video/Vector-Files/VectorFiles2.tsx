@@ -38,7 +38,6 @@ const TextBlue =styled(TEXT_B)`
 
 `;
 
-
 const Link = styled(LINK)`
 font-size: 15px;
 transform: translate(-60px, 0px);
@@ -47,28 +46,13 @@ transform: translate(-60px, 0px);
 
 export const VectorFiles2: React.FC = () => {
 
-const config = useVideoConfig();
-const frame = useCurrentFrame();
+return (
 
-const FadeOut = interpolate(frame, [300,360],[1,0],{
-
-extrapolateRight:'clamp',
-extrapolateLeft:'clamp'
-})
-
-const FadeIn = interpolate(frame, [300,360],[0,1],{
-
-	extrapolateRight:'clamp',
-	extrapolateLeft:'clamp'
-	})
-
-
-	return (
-		<Container>
+<Container>
 	<Title style={{transform: `translate(0px,65px)`}}> SVG</Title>
 			<br />
 			<br />
-			<Text>
+		<Text>
 			<br/>
 			<Text2 style={{transform: `translate(0px,50px)`}} >
 			create an SVG by opening a  <TextBlue>svg tag </TextBlue> then define a coordinate System with the 
@@ -77,44 +61,29 @@ const FadeIn = interpolate(frame, [300,360],[0,1],{
 	
 				 That gives us  a frame with a width and height with 100 units on which we can draw graphics
 				 Draw basic shapes by adding 
-				 <br/>
-				 <br/>
+			<br/>
+			<br/>
 				 <TextBlue>rect, circle & polygon </TextBlue>
-				</Text2>
-				 
-				 <br/>
-			
-			</Text>
-
-
-
-
-
-
-
-
-
+			</Text2>	 
+			<br/>	
+		</Text>
 <Text style={{marginLeft:`-20px`,
 							fontSize: `20px`,
 							transform: `translateY(-100px)`
 								}}>
+
 For a more in depth explanation go check out :
-<Link >
-<a
+
+						<Link >
+						<a
 				href="https://https://www.w3schools.com/graphics/svg_intro.asp"
 				target="_blank"
 				style={{
-					textDecoration: 'none',
-					
-				}}
-			>
-
-w3schools.com
+					textDecoration: 'none'}}>
+					w3schools.com
 						</a>
-</Link>
-</Text>
-
+						</Link>
+		</Text>
 </Container>
-
 	);
 };

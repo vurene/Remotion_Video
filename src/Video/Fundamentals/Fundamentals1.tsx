@@ -30,25 +30,25 @@ const TextBlue = styled(TEXT_B)`
 export const Fundamentals1: React.FC = () => {
 	return (
 		<Container>
-	<br />
-			<br />
-			<br /> 
+				<br />
+				<br />
+				<br /> 
 			<Title style={{transform: `translateY(-6  0px)`}}>Fundamentals</Title>
 			<Text >The first place you should go after installing, is the file: 
 				<br/>
 				<br/>
-				<TextBlue>Video.tsx </TextBlue>
-			<br/>
-			 <br/>
+			<TextBlue>Video.tsx </TextBlue>
+				<br/>
+				 <br/>
 			This file contains following component:
-			<br/>
+				<br/>
 	
-		<TextBlue>	RemotionVideo </TextBlue>
-			<br/>
+			<TextBlue>	RemotionVideo </TextBlue>
+				<br/>
 		
 			Think of it as your entire Video!
-		
-		</Text>
+
+			</Text>
 
 		</Container>
 	);

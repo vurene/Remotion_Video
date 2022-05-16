@@ -32,8 +32,12 @@ transform:scale(0.2);
 
 export const RemotionLogoIntro: React.FC = () => {
 
-  const { fps } = useVideoConfig(); // import default prop 'fps' from VideoConfig
-  const frame = useCurrentFrame();  // import frame from useCurrentFrame()
+// import default prop 'fps' from VideoConfig
+  const { fps } = useVideoConfig(); 
+
+// import frame from useCurrentFrame()
+  const frame = useCurrentFrame();  
+
 // Interpolate function for Opacity the Text component
 const Opac = interpolate(frame, [10,140],[0,1],
 {
@@ -51,6 +55,7 @@ extrapolateRight:'clamp'
     },
   });
 
+
   return (
     <AbsoluteFill
       style={{
@@ -60,10 +65,8 @@ extrapolateRight:'clamp'
         backdropFilter: "blur(" + 20 * enterLogo + "px)",
       }}
     >
-<Container>/
 
-
-
+<Container>
       <Img
         style={{
           height: 1500,

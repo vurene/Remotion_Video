@@ -6,6 +6,5 @@ import styled from 'styled-components';
 
 
 export const OUTER = styled(AbsoluteFill)`
-	/* background-color: #181820; */
 
 `;

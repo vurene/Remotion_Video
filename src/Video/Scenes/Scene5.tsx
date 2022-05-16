@@ -1,8 +1,8 @@
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
-import { AnimaProps } from '../Animation-props/AnimaProps';
-import { AnimaProps2 } from '../Animation-props/AnimaProps2';
-import {  AnimaPropsR2 } from '../Animation-props/AnimaPropsR2';
+import { AnimaProps } from '../Animation-Properties/AnimaProps';
+import { AnimaProps2 } from '../Animation-Properties/AnimaProps2';
+import {  AnimaPropsR2 } from '../Animation-Properties/AnimaPropsR2';
 import { CENTERED } from '../Styled-Components/Centered';
 import { CONTAINER } from '../Styled-Components/Container';
 import { LEFT } from '../Styled-Components/Left';
