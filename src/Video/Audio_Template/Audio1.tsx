@@ -33,11 +33,12 @@ const Text2 = styled(TEXT2)`
 	margin: 40px;
 	`;
 
-
 const TextBlue=styled(TEXT_B)`
-
-
 `;
+
+
+
+
 export const Audio1: React.FC = () => {
 	return (
 		<Container>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import CompPic from '../../assets/compoTemplate.png'
 import { TEXT } from '../Styled-Components/Text';
 import { TITLE_B } from '../Styled-Components/TitleBlue';

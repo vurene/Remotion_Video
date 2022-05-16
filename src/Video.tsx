@@ -1,5 +1,6 @@
 
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, 
+	Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import {Composition} from 'remotion';
 import { Intro } from './Video/Scenes/Intro';
 import { Main } from './Video/Sequence';

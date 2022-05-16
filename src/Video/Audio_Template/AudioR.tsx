@@ -12,9 +12,6 @@ const Container = styled(ABSO_FILL)`
 
 `;
 
-const Title = styled(TITLE_W)`
-
-`;
 
 
 export const AudioR: React.FC = () => {

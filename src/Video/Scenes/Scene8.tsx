@@ -1,9 +1,6 @@
-import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
-
-
-import { VectorFiles } from '../Vector-Files/VectorFiles';
-import { VectorFilesR } from '../Vector-Files/VectorFilesR';
 import { Translate } from '../Translate()/Translate';
 import { TranslateR } from '../Translate()/TranslateR';
 import { CENTERED } from '../Styled-Components/Centered';
@@ -51,9 +48,6 @@ export const Scene8: React.FC = () => {
 	const SMALL_PANEL_HEIGHT1 = (height - PADDING * 2 - SPACING) / 0.8;	// set Width from Panel 1
 	const SMALL_PANEL_HEIGHT2 = (height - PADDING * 2 - SPACING) / 1.5;	// set Height from Panel 2
 
-
-
-
 	// Spring function for timing the CSS functions
 	const progress = (i: number) =>
 		spring({
@@ -91,11 +85,9 @@ export const Scene8: React.FC = () => {
 						}}
 					>
 						<Centered style={{opacity: progress(3)}}>
-					
 							<TranslateR/>
 						</Centered>
-					</Panel>
-				
+					</Panel>	
 				</Right>
 			</Container>
 		</Outer>

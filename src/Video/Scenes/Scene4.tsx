@@ -1,5 +1,6 @@
 //____________Imports____________
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import styled from 'styled-components';
 import { AnimaProps } from '../Animation-Properties/AnimaProps';
 import { AnimaPropsR2 } from '../Animation-Properties/AnimaPropsR2';

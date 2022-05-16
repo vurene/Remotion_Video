@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import {Triangle} from './Logo/Triangle';
 import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import { TITLE_B } from '../Styled-Components/TitleBlue';
 import { TEXT } from '../Styled-Components/Text';

@@ -5,13 +5,7 @@ import { TEXT } from '../Styled-Components/Text';
 import { TEXT2 } from '../Styled-Components/Text2';
 
 
-
-
-
-
-
-
-//_______Styled-Components____________
+//____________Styled-Components____________
 
 const Container = styled(ABSO_FILL)`
 

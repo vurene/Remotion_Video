@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, 
+	useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import Pic from'../../assets/translate()Interpolate.png';
 import { TEXT } from '../Styled-Components/Text';
 import { TITLE_W } from '../Styled-Components/TitleWhite';
@@ -17,11 +18,6 @@ const Container = styled(ABSO_FILL)`
 	align-items: center;
 	flex-direction: column;
 	
-`;
-
-const Title = styled(TITLE_W)`
-
-	transform: translateX(20px);
 `;
 
 const Text = styled(TEXT)`
@@ -51,7 +47,6 @@ const MoveLeft = interpolate(frame, [150,200],[700,0],
 			 				interpolate() and spring()
 			 </Text>
 		
-
 	<Img src={Pic} style={{transform: `translate(${MoveLeft}px, 10px)`}}/>	
 	
 	</Container>

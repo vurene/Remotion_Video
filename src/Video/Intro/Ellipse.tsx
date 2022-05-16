@@ -1,11 +1,7 @@
 
-import { AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
-
-
-
-
-
-
+import { AbsoluteFill, Img, Easing, useCurrentFrame, 
+  useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+  
 export const Ellipse: React.FC<{
   
   rotation: number;
@@ -20,7 +16,7 @@ export const Ellipse: React.FC<{
   const ry = 400 / 2 ;
 
 
-// Variable for the Length with PI for making a circle
+// Variable for the Length with PI for making a circle. IS used in Ellipse SVG to make a 
   const arcLength = Math.PI * 2 * Math.sqrt((rx * rx + ry * ry) / 2);
 
 
@@ -56,7 +52,7 @@ export const Ellipse: React.FC<{
         transformOrigin: "50% 50%",
       }}
     >
-
+{/*_____________Ellipse Component f  */}
      <ellipse
         cx={width / 2}
         cy={height / 2}

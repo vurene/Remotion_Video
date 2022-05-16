@@ -1,6 +1,4 @@
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence, Easing } from 'remotion'; 
-
-
  import styled from 'styled-components';
  import { RectBorder } from '../helpers/RectangleSolidBorder';
 
@@ -31,14 +29,15 @@ const SubRect4 = styled(RectBorder)`
 
 
  export const RectStarSpring: React.FC <{}> = ({}) => {
-
+//getting config for Spring function
   const config = useVideoConfig();
+   // import frame from useCurrentFrame() 
   const frame = useCurrentFrame();
-  const duration = 60;
+
  
 
 
-
+// Spring function for animating scale of Rectangles
   const Scaler = spring({
     frame: frame - 130,
     from: 0.4,
@@ -51,16 +50,13 @@ const SubRect4 = styled(RectBorder)`
   });
 
 
- 
+ // Interpoalte function for animating rotation of rectangle
   const RotatorSub  = interpolate(frame, [20,80],[0,45], {extrapolateRight:'clamp',extrapolateLeft: 'clamp', easing: Easing.ease})
   const RotatorSub1 = interpolate(frame, [20,80],[0,60], {extrapolateRight:'clamp',extrapolateLeft: 'clamp'})
   const RotatorSub2 = interpolate(frame, [20,80],[0,75], {extrapolateRight:'clamp',extrapolateLeft: 'clamp'})
   const RotatorSub3 = interpolate(frame, [20,80],[0,15], {extrapolateRight:'clamp',extrapolateLeft: 'clamp'})
   const RotatorSub4 = interpolate(frame, [20,80],[0,90], {extrapolateRight:'clamp',extrapolateLeft: 'clamp'})
   const RotatorSub5 = interpolate(frame, [20,80],[0,30], {extrapolateRight:'clamp',extrapolateLeft: 'clamp'})
-
-  
-
 
 
 

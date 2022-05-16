@@ -1,6 +1,5 @@
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import styled from 'styled-components';
-
 import { AnimaProps4 } from '../Animation-Properties/AnimaProps4';
 import { AnimaPropsR4 } from '../Animation-Properties/AnimaPropsR4';
 import { CENTERED } from '../Styled-Components/Centered';
@@ -64,7 +63,6 @@ export const Scene7: React.FC = () => {
 		});
 
 
-		
 	return (
 		<Outer>
 			<Container>
@@ -94,7 +92,6 @@ export const Scene7: React.FC = () => {
 					<AnimaPropsR4/>
 						</Centered>
 					</Panel>
-				
 				</Right>
 			</Container>
 		</Outer>

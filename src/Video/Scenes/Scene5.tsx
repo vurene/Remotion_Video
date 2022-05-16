@@ -76,23 +76,19 @@ const Opac = interpolate(frame, [10,70],[0,1],
 						}}
 					>
 						<Centered style={{opacity: progress(1)}}>
+
 							<AnimaProps2 />
+
 						</Centered>
 					</Panel>
 				</Left>
 				<div style={{width: 30}} />
 				<Right>
-		
-				
-
-					
 						<Centered style={{opacity: progress(3)}}>
 
-
 							<AnimaPropsR2 />
+
 						</Centered>
-		
-				
 				</Right>
 			</Container> 
 		</Outer>

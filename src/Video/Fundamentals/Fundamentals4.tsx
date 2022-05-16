@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 // import {Triangle} from './Logo/Triangle';
-import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame, useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
+import { Audio, Series, staticFile, AbsoluteFill, Img, Easing, useCurrentFrame,
+	useVideoConfig, spring, interpolate, Sequence } from 'remotion'; 
 import { TEXT } from '../Styled-Components/Text';
 import { TITLE_B } from '../Styled-Components/TitleBlue';
 import { TEXT_B } from '../Styled-Components/TextBlue';
